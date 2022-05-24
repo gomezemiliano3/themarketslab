@@ -77,27 +77,6 @@ header {
 
 /* PRINCIPAL */
 
-/* ASIDE */
-
-#aside {
-    width: 5%;
-    margin-left: -5px;
-    height: 30%;
-    position: fixed;
-    border-color: #62FE7A;
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 0 20px 20px 0;
-    color: white;
-    font-size: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-aside i {
-    margin: 10px;
-}
 
 .titulos {
     display: flex;
@@ -159,15 +138,23 @@ h1 span {
     margin-top: 5rem;
     justify-content: center;
     display: flex;
-    
+}
+
+.fotos {
+    transition: all 0.4s ease-in-out;
+    border-color: #62FE7A;
+    width:23%;
+    height: 80%;
+    border-style: solid;
+    border-radius: 30px;
+    border-width: 2px;
+    margin: 30px;
 }
 
 :hover.fotos{
-background-color:#97ffa7;
+background-color:white;
 border-color:white;
 border-width: 2px;
-color: black;
-transition:0.4s;
 }
 
 :hover.fotos h3{
@@ -178,17 +165,6 @@ transition:0.4s;
 :hover.fotos p{
 color: black;
 transition: 0.4s;
-}
-
-
-.fotos {
-    border-color: #62FE7A;
-    width:23%;
-    height: 80%;
-    border-style: solid;
-    border-radius: 30px;
-    border-width: 2px;
-    margin: 30px;
 }
 
 .fotos span {
@@ -461,6 +437,7 @@ footer {
 .cursos {
     display: flex;
     justify-content: center;
+    background-image: linear-gradient(to bottom, #000 30% , #121112);
 }
 
 .grid-principal-cursos {
@@ -698,7 +675,6 @@ footer {
 
 .right-tercera-parte-cursos {
     width: 50%;
-    background-color: transparent;
     justify-content: center;
     align-items: center;
 }
@@ -789,6 +765,11 @@ footer {
     font-size: 35px;
     text-align: center;
     text-decoration: none;
+}
+
+.mas-info-cursos p {
+    background-image: linear-gradient(to bottom, #000 , #151515);
+    margin-bottom: 0;
 }
 
 .mas-info-cursos p a {
@@ -891,16 +872,6 @@ footer {
     align-items: center;
     justify-content: center;
 }
-
-/* MEDIA QUERIES REPORTES */
-
-    @media only screen and (min-width: 1024px) and (max-width: 1200px){
-        
-    }
-
-
-
-
 
 /* CONTACTO */
 
@@ -1038,11 +1009,16 @@ textarea {
 }
 
 
+    /*  */
+    /*  */
+    /* MEDIA QUERIES */
+    /*  */
+    /*  */
 
-/* MEDIA QUERIES CURSOS */
-    /* GRID PRINCIPAL CURSOS */
-    /* PANTALLA PC - IPAD */
 
+    /* MEDIA QUERIES CURSOS */
+    /*  */
+    /*  */
     @media only screen and (min-width: 1024px) and (max-width: 1200px) {
     
         .nav-bar {
@@ -1105,9 +1081,6 @@ textarea {
         }
     }
 
-
-    /* TABLETS 10 PULGADAS */
-    
     @media only screen and (min-width: 768px) and (max-width: 1023px) {
         
         .nav-bar {
@@ -1218,27 +1191,7 @@ textarea {
         }
     }
 
-
-    /* TABLETS PEQUEÑAS */
     @media only screen and (min-width: 600px) and (max-width: 768px) {
-        .nav-bar {
-            width: 5%;
-        }
-
-        .nav-bar a {
-            color: rgb(188, 188, 188);
-            font-family:'Montserrat', sans-serif;
-            font-size: 13px;
-            text-decoration: none;      
-        }
-
-        .logo img {
-            width: 60%;
-            height: auto;
-            margin-left: 20%;
-        }
-    
-
         .titulos-cursos {
             margin-top: 5rem;
             font-size: 30px;
@@ -1367,8 +1320,7 @@ textarea {
 
     }
 
-        /* TELEFONOS HORIZONTALES */
-        @media only screen and (min-width: 480px) and (max-width: 600px) {
+    @media only screen and (min-width: 480px) and (max-width: 600px) {
             .nav-bar {
                 width:5%;
             }
@@ -1538,39 +1490,13 @@ textarea {
                 color:black;
                 font-size: 13px;
             }
-            
-            .disclaimer-p-footer {
-                grid-area: p;
-                padding: 0 10px 0 10px;
-            }
-            
-            .disclaimer-p-footer p {
-                color:#969696;
-                font-weight: 300;
-                font-size: 11px;
-            }
-            
-            .disclaimer-p2-footer p {
-                color: #969696;
-                font-weight: 300;
-                font-size: 11px;
-            }
 
-            .icons-footer {
-                grid-area: icons;
-                padding-left: 10px;
-                font-size: 10px;
-                color: rgb(157, 157, 157);
-                word-spacing: 20px;
-            }
+            /* FOOTER  */
+            
+            
+    }
 
-            .nav-footer {
-                grid-area: nav;
-                margin-left: 1px;
-            }
-        }
-
-        @media only screen and (min-width: 320px) and (max-width: 480px) {
+    @media only screen and (min-width: 320px) and (max-width: 480px) {
             .nav-bar {
                 width:1%;
             }
@@ -1587,14 +1513,14 @@ textarea {
         
     
             .titulos-cursos {
-                margin-top: 5rem;
+                margin-top: 4rem;
                 font-size: 15px;
+                margin-bottom: 10%;
             }
 
             .titulos-cursos p {
                 font-size: 10px;
                 margin-top: 20px;
-                padding-bottom: 5%;
             }
 
             .cursos {
@@ -1632,10 +1558,11 @@ textarea {
     
             .segunda-parte-cursos h2 {
                 font-size: 15px;
-                padding-left: 20px;
+                padding-left: 10px;
             } 
             .segunda-parte-cursos p {
                 margin: 0 5% 0 5%;
+                width: 90%;
                 font-size: 10px;
             }
     
@@ -1713,6 +1640,7 @@ textarea {
                 color: #474747;
                 font-size: 13px;
                 padding-left: 30px;
+                width: 90%;
             }
     
     
@@ -1721,6 +1649,7 @@ textarea {
                 height: 40rem;
                 background-color: white;
                 margin: 0 auto;
+                padding-top: 20px;
                 display: grid;
                 grid-template-columns: 1fr 1fr;
                 grid-template-rows: 30px 150px 80px 100px;
@@ -1756,104 +1685,19 @@ textarea {
                 font-size: 13px;
             }
 
-            /* FOOTER */
+    }
+    /*  */
+    /*  */
+    /* FIN MEDIA QUERIES CURSOS */
 
-            .grid-principal-footer {
-                background-color: transparent;
-                width: 100%;
-                height: auto;
-                display: grid;
-                grid-template-columns: 80% 1fr;
-                grid-template-rows: 50px 200px 120px 50px 50px;
-                grid-template-areas: "disclaimer disclaimer"
-                                    "p p"
-                                    "p2 p2"
-                                    "nav nav"
-                                    "icons icons";
-                                    
-            }
 
-            .disclaimer-title-footer {
-                grid-area: disclaimer;
-                background-color: transparent;
-                width: 100%;
-                text-align: left;
-                font-family: 'Montserrat', sans-serif;
-                padding: 0 0 0 10px;
-                color: rgb(188, 188, 188);
-            }
-            
-            .disclaimer-p-footer {
-                grid-area: p;
-                padding: 0 10px 0 10px;
-            }
-            
-            .disclaimer-p-footer p {
-                color:#969696;
-                font-weight: 300;
-                font-size: 11px;
-
-            }
-            
-            .disclaimer-p2-footer {
-                grid-area: p2;
-                padding: 0 40px 0 10px;
-            }
-            
-            .disclaimer-p2-footer p {
-                color: #969696;
-                font-weight: 300;
-                font-size: 11px;
-
-            }
-            
-            .logo-footer {
-                grid-area: logo;
-                padding: 0 0 0 10px;
-            }
-            
-            .nav-footer {
-                grid-area: nav;
-                margin-left: 1px;
-                }
-
-                .nav-bar a {
-                    width: 90%;
-                }
-            
-            
-            .icons-footer {
-                grid-area: icons;
-                padding-left: 10px;
-                font-size: 15px;
-                color: rgb(157, 157, 157);
-                word-spacing: 20px;
-            }
-            
-        }
 
 
 
     /* MEDIA QUERIES HOME */
-
-
-    /* DESKTOP - TABLETS GRANDES */
+    /*  */
+    /*  */
     @media only screen and (min-width: 1024px) and (max-width: 1200px) {
-
-        /* HEADER */
-        
-        .logo img {
-            width: 45%;
-            margin-left: 20%;
-        }
-        
-        .nav-bar li {
-            margin-left: 10%;
-        }
-        
-        .nav-bar a {
-            font-size: 15px;
-        }
     
         /* PRIMERA PARTE HOME */
         
@@ -1908,6 +1752,7 @@ textarea {
         .third-part img {
             width: 40%;
         }
+
         
         .third-part div {
             width: 40%;
@@ -1954,35 +1799,10 @@ textarea {
         .fift-h2 {
             font-size: 30px;
         }
-        
+
     }
-
-
-    /* TABLETS 10 PULGADAS */
     
     @media only screen and (min-width: 768px) and (max-width: 1024px) {
-
-        /* HEADER */
-
-        .logo {
-            width: 50%;
-        }
-
-        .logo img {
-            width: 60%;
-        }
-
-        .nav-bar {
-            width: 50%;
-        }
-        
-        .nav-bar li {
-            margin-left: 5%;
-        }
-        
-        .nav-bar a {
-            font-size: 15px;
-        }
     
         /* PRIMERA PARTE HOME */
         
@@ -2092,29 +1912,11 @@ textarea {
         .fift-h2 {
             font-size: 30px;
         }
-
-        /* FOOTER */
-        /*  */
-        /*  */
         
     }
 
-
-    /* TABLETS PEQUEÑAS */
     @media only screen and (min-width: 600px) and (max-width: 768px) {
 
-            /* HEADER */
-            .nav-bar {
-                width: 50%;
-            }
-
-            .nav-bar li {
-                margin-left: 2%;
-            }
-            .nav-bar a {
-                font-size: 14px;
-            }
-        
             /* PRIMERA PARTE HOME */
             
             .titulos {
@@ -2241,55 +2043,12 @@ textarea {
                 font-weight: 600;
                 margin: 0 20px 0 20px;
             }
-    
-            /* FOOTER */
 
-            footer {
-                padding-bottom: 30px;
-            }
-
-            .nav-bar a {
-                font-size: 11px;
-                margin-left: 5px;
-            }
-
-            .icons-footer {
-            font-size: 15px;
-            }
-
-            /*  */
-            /*  */
 
     }
 
-
-    /* TELEFONOS HORIZONTALES */
-
-    @media only screen and (min-width: 480px) and (max-width: 599px) {
-
-            /* HEADER */
-            .nav-bar {
-                width: 50%;
-            }
-
-            .logo {
-            display: flex;
-            justify-content: center;
-            }
-
-            .logo img {
-                width: 70%;
-                margin: 0;
-            }
-
-            .nav-bar {
-                display: flex;
-                justify-content: center;
-            }
-
-            .nav-bar li {
-            margin: 2px;
-            }
+    @media only screen and (min-width: 480px) and (max-width: 600px) {
+    
         
             /* PRIMERA PARTE HOME */
             
@@ -2441,61 +2200,11 @@ textarea {
                 font-weight: 600;
                 margin: 0 20px 0 20px;
             }
-    
-            /* FOOTER */
 
-            .grid-principal-footer {
-                grid-template-rows: 50px 150px 70px 50px 50px;
-            }
+    }         
 
-            footer {
-                padding-bottom: 30px;
-            }
+    @media only screen and (min-width: 320px) and (max-width: 480px) {
 
-            .nav-footer {
-                margin-left: 50px;
-            }
-
-            .nav-bar a {
-                font-size: 11px;
-                margin-left: 5px;
-            }
-
-            .icons-footer {
-            font-size: 15px;
-            }
-
-            .logo-footer img {
-                width: 40%;
-            }
-
-            
-            @media only screen and (min-width: 480px) and (max-width: 599px) {
-
-            /* HEADER */
-            .nav-bar {
-                width: 50%;
-            }
-
-            .logo {
-            display: flex;
-            justify-content: center;
-            }
-
-            .logo img {
-                width: 70%;
-                margin: 0;
-            }
-
-            .nav-bar {
-                display: flex;
-                justify-content: center;
-            }
-
-            .nav-bar li {
-            margin: 2px;
-            }
-        
             /* PRIMERA PARTE HOME */
             
             .titulos {
@@ -2507,12 +2216,12 @@ textarea {
             
             #title {
                 margin:auto;
-                font-size: 60px;
+                font-size: 40px;
                 width: fit-content;
             }
 
             #title span {
-                font-size: 60px;
+                font-size: 40px;
             }
             
             #subtitle {
@@ -2523,18 +2232,15 @@ textarea {
                 line-height:30px;
             }
 
-            #subtitle span {
-                font-weight: 500;
-            }
     
             #wave {
-                margin-top: 30px;
+                margin-top: 70px;
                 width: 100%;
-                height: 10rem;
+                height: 8rem;
             }
             
             .tradingview-widget-container {
-                margin-top: 100px;
+                margin-top: 150px;
                 width: 100%;
             }
     
@@ -2543,12 +2249,12 @@ textarea {
     
             .second-part {
                 display: inline-block;
-                margin-bottom: 20rem;
+                margin-bottom: 27rem;
             }
 
             .fotos {
                 width:70%;
-                height: 50%;
+                height: 60%;
                 margin: 0 auto;
                 margin-bottom: 40px;
             }
@@ -2599,7 +2305,7 @@ textarea {
     
             .fourth-part {
                 margin-top: 2rem;
-                height: 25rem;
+                height: 30rem;
             }
             
             .fourth-part h2 {
@@ -2624,13 +2330,20 @@ textarea {
             }
     
             .fift-part {
-                height: 20vh;
+                height: 15vh;
                 margin-bottom: 100px;
                 width: 100%;
             }
     
             .fift-part h2 {
-                font-size: 30px;
+                font-size: 25px;
+                width: 90%;
+                margin: 0 auto;
+            }
+
+            .links-fift-part {
+                display: flex;
+                flex-wrap: wrap;
             }
 
             #cursos-bttn1 {
@@ -2646,225 +2359,134 @@ textarea {
                 font-weight: 600;
                 margin: 0 20px 0 20px;
             }
-    
-            /* FOOTER */
 
-            .grid-principal-footer {
-                grid-template-rows: 50px 150px 70px 50px 50px;
+            .links-fift-part p {
+                margin: 5px;
             }
+    }
+    /*  */
+    /*  */
+    /* FIN DE MEDIA QUERIES HOME */
 
-            footer {
-                padding-bottom: 30px;
-            }
 
-            .nav-footer {
-                margin-left: 50px;
-            }
 
-            .nav-bar a {
-                font-size: 11px;
-                margin-left: 5px;
-            }
 
-            .icons-footer {
+
+    /* MEDIA QUERIES HEADER */
+    /*  */
+    /*  */
+    @media only screen and (min-width: 1024px) and (max-width: 1200px) {        
+        .logo img {
+            width: 45%;
+            margin-left: 20%;
+        }
+        
+        .nav-bar li {
+            margin-left: 10%;
+        }
+        
+        .nav-bar a {
             font-size: 15px;
-            }
+        }
+    }
 
-            .logo-footer img {
-                width: 40%;
-            }
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+        /* HEADER */
+
+        .logo {
+            width: 50%;
         }
 
+        .logo img {
+            width: 60%;
+        }
 
-            @media only screen and (min-width: 320px) and (max-width: 480px) {
+        .nav-bar {
+            width: 50%;
+        }
+        
+        .nav-bar li {
+            margin-left: 5%;
+        }
+        
+        .nav-bar a {
+            font-size: 15px;
+        }
+    }
 
-            /* HEADER */
-            .nav-bar {
-                width: 50%;
-            }
+    @media only screen and (min-width: 600px) and (max-width: 768px) {
+        .nav-bar {
+            width: 5%;
+        }
 
-            .logo {
+        .nav-bar a {
+            color: rgb(188, 188, 188);
+            font-family:'Montserrat', sans-serif;
+            font-size: 13px;
+            text-decoration: none;      
+        }
+
+        .logo img {
+            width: 60%;
+            height: auto;
+            margin-left: 20%;
+        }
+    }
+
+    @media only screen and (min-width: 480px) and (max-width: 600px) {
+        .nav-bar {
+            width:5%;
+        }
+
+        .nav-bar a {
+            color: rgb(188, 188, 188);
+            font-family:'Montserrat', sans-serif;
+            font-size: 10px;
+            text-decoration: none;      
+        }
+
+        .logo img {
+            width: 60%;
+            height: auto;
+            margin-left: 20%;
+        }
+    }
+
+    @media only screen and (min-width: 320px) and (max-width: 480px) {
+        .nav-bar {
+            width: 40%;
             display: flex;
             justify-content: center;
-            }
+        }
 
-            .logo img {
-                width: 70%;
-                margin: 0;
-            }
+        .logo {
+        display: flex;
+        justify-content: center;
+        }
 
-            .nav-bar {
-                display: flex;
-                justify-content: center;
-            }
+        .logo img {
+            width: 70%;
+            margin: 0;
+        }
 
-            .nav-bar li {
-            margin: 2px;
-            }
-        
-            /* PRIMERA PARTE HOME */
-            
-            .titulos {
-                margin-top: 5rem;
-                width:100%;
-                display: inline-block;
-                justify-content: center;
-            }
-            
-            #title {
-                margin:auto;
-                font-size: 60px;
-                width: fit-content;
-            }
+        .nav-bar li {
+        margin: 0;
+        }
+    }
+    /*  */
+    /*  */
+    /* FIN MEDIA QUERIES HEADER */
 
-            #title span {
-                font-size: 60px;
-            }
-            
-            #subtitle {
-                padding-top: 30px;
-                margin: 0 auto;
-                font-size: 15px;
-                width: 70%;
-                line-height:30px;
-            }
 
-            #subtitle span {
-                font-weight: 500;
-            }
-    
-            #wave {
-                margin-top: 30px;
-                width: 100%;
-                height: 10rem;
-            }
-            
-            .tradingview-widget-container {
-                margin-top: 100px;
-                width: 100%;
-            }
-    
-    
-            /* SEGUNDA PARTE HOME */
-    
-            .second-part {
-                display: inline-block;
-                margin-bottom: 20rem;
-            }
 
-            .fotos {
-                width:70%;
-                height: 50%;
-                margin: 0 auto;
-                margin-bottom: 40px;
-            }
-            
-            .second-part div h3 {
-                font-size: 20px;
-                margin-top: 25px;
-            }
-            
-            .second-part div p {
-                font-size: 12px;
-            }
-            
-    
-            /* TERCERA PARTE HOME */
 
-            .third-part {
-                height:40rem;
-                display: flex;
-                flex-wrap: wrap;
-                width: 100%;
-                margin-bottom: 50px;
-            }
-            
-            .third-part img {
-                width: 80%;
-                margin: 0 auto;
-            }
-            
-            .third-part div {
-                width: 80%;
-                text-align: center;
-                
-            }
-            
-            .third-part h2 {
-                font-size: 25px;
-                width: 100%;
-            }
 
-            .third-part p {
-                line-height: 25px;
-                font-size: 13px;
-                width: 100%;
-            }
-    
-            /* CUARTA PARTE HOME */
-    
-            .fourth-part {
-                margin-top: 2rem;
-                height: 25rem;
-            }
-            
-            .fourth-part h2 {
-                font-size: 25px;
-                margin: 0 40px 0 40px;
-            }
-            
-            .fourth-part p {
-                font-size: 13px;
-                margin: 20px 40px 0 40px;
-            }
-
-            #mas-info {
-                font-size: 11px;
-            }
-    
-            /* QUINTA PARTE HOME */
-    
-    
-            .fift-part img {
-                width: 100%;
-            }
-    
-            .fift-part {
-                height: 20vh;
-                margin-bottom: 100px;
-                width: 100%;
-            }
-    
-            .fift-part h2 {
-                font-size: 30px;
-            }
-
-            #cursos-bttn1 {
-                font-size: 12px;
-                padding: 5px 10px 5px 10px;
-                font-weight: 600;
-                margin: 0 20px 0 20px;
-            }
-            
-            #cursos-bttn2 {
-                font-size: 12px;
-                padding: 5px 10px 5px 10px;
-                font-weight: 600;
-                margin: 0 20px 0 20px;
-            }
-    
-            /* FOOTER */
-
-            .grid-principal-footer {
-                grid-template-rows: 50px 150px 70px 50px 50px;
-            }
-
+    /* MEDIA QUERIES FOOTER */
+    /*  */
+    /*  */
+        @media only screen and (min-width: 600px) and (max-width: 768px) {
             footer {
                 padding-bottom: 30px;
-            }
-
-            .nav-footer {
-                margin-left: 50px;
             }
 
             .nav-bar a {
@@ -2876,9 +2498,98 @@ textarea {
             font-size: 15px;
             }
 
+            /*  */
+            /*  */
+        }
+
+        @media only screen and (min-width: 480px) and (max-width: 600px) {
+            .grid-principal-footer {
+                grid-template-rows: 50px auto auto 50px 50px;
+                grid-template-columns: 1fr;
+                grid-template-areas: "disclaimer disclaimer"
+                "p p"
+                "p2 p2"
+                "nav nav"
+                "icons icons";
+            }
+
+
+            footer {
+                padding-bottom: 30px;
+            }
+
+
+            .nav-bar a {
+                font-size: 11px;
+                margin-left: 5px;
+            }
+
+            .nav-footer {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+            }
+
+            .nav-bar {
+                width: 100%;
+                display: flex;
+                justify-content: flex-start;
+                padding-left: 5px;
+            }
+
+            .icons-footer {
+            font-size: 15px;
+            }
+
             .logo-footer img {
                 width: 40%;
             }
-    }
+        }   
 
-    }
+        @media only screen and (min-width: 320px) and (max-width: 480px) {
+
+            .grid-principal-footer {
+                grid-template-rows: 50px auto auto 50px 50px;
+                grid-template-columns: 1fr;
+                grid-template-areas: "disclaimer disclaimer"
+                "p p"
+                "p2 p2"
+                "nav nav"
+                "icons icons";
+            }
+
+            footer {
+                padding-bottom: 30px;
+            }
+
+            .nav-footer {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+            }
+
+            .nav-bar {
+                width: 100%;
+                display: flex;
+                justify-content: flex-start;
+                padding-left: 5px;
+            }
+
+            .nav-bar a {
+                font-size: 10px;
+                margin: 5px;
+            }
+
+            .icons-footer {
+            font-size: 15px;
+            margin-top: 20px;
+            }
+
+            .logo-footer img {
+                width: 60%;
+                margin-top: 20px;
+            }
+        }
+    /*  */
+    /*  */
+    /* FIN DE MEDIA QUERIES FOOTER */
