@@ -120,6 +120,15 @@ h1 span {
 #wave {
     width: 100%;
     height: 30rem;
+    animation-name: wave-animation;
+    animation-timing-function: ease-in-out;
+    animation-duration: 2s;
+    animation-iteration-count:1;
+}
+
+@keyframes wave-animation {
+    0% { height: 20rem;}
+    100% { height: 30rem;}
 }
 
 .tradingview-widget-container {
@@ -2473,7 +2482,7 @@ textarea {
         margin: 0;
         }
     }
-    /*  */
+    /*  */ 
     /*  */
     /* FIN MEDIA QUERIES HEADER */
 
