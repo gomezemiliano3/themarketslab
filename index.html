@@ -2,235 +2,346 @@
 <html lang="es">
 
 <head>
-
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TheMarketsLab - Inicio</title>
-    <link rel="normalize" href="/css/normalize.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/90bae21807.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/index.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800&display=swap');
     </style>
-    <script src="https://kit.fontawesome.com/911505a803.js" crossorigin="anonymous"></script>
+    <title>TheMarketsLab</title>
+</head>
 
 <body>
-
-    <!-- logo-nav -->
-
     <header>
+        <div class="container-fluid" id="container-nav">
+            <nav class="navbar navbar-expand-md">
+                <!-- Brand -->
+                <a class="navbar-brand" href="#">
+                    <img src="/pictures/logo-black.png" alt="" height="40">
+                </a>
 
-        <!-- logo -->
-        <div class="logo">
-            <a href="/index.html"></a>
-            <img src="pictures/logo-white.png" alt="">
-        </div>
+                <!-- Toggler/collapsibe Button -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
+                </button>
 
-        <!-- nav -->
-        <div class="nav-bar">
-            <li><a href="index.html" class="nav-articles">Inicio</a></li>
-            <li><a href="pages/cursos.html" class="nav-articles">Cursos</a></li>
-            <li><a href="pages/reportes.html" class="nav-articles">Reportes</a>
-            </li>
-            <li><a href="pages/contacto.html" class="nav-articles">Contacto</a>
-            </li>
+                <!-- Navbar links -->
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="scanner-border" href="pages/scanner.html">Scanner</a>
+                        </li>
 
+                        <div class="carrito-item">
+                            <i class="fa-solid fa-bag-shopping carrito"></i>
+                        </div>
+                    </ul>
+                </div>
+            </nav>
         </div>
     </header>
 
 
-    <!-- título - subtitulo -->
+    <!-- INICIA PRIMERA PARTE HOME -->
 
-    <div class="titulos">
+    <div class="container-fluid container-principal-home">
 
+        <div class="row row-1-home">
 
-        <h1 id="title"><span>Trading </span>& Volumen. </h1>
-
-        <p id="subtitle">Aprende las tácticas y estrategias de los fondos de inversión <span> y entiende cómo operan para poder acompañarlos en cada movimiento.</span></p>
-
-    </div>
+            <div class="col-12 col-md-6 col-sm-12">
 
 
-    <!-- boton y gráfica -->
+                <h1 class="display-2 texto-principal">
+                    Trading & Volumen
+                </h1>
+                <p class="subtexto-principal-home">Aprende las tácticas y estrategias de los fondos de inversión y <span
+                        class="text-muted"> entiende cómo operan para poder acompañarlos en cada movimiento.</span></p>
 
-    <img src="pictures/wave.png" id="wave" alt="">
+                <div class="row row-1-subtitulos-home">
+                    <div class="col">
+                        <div class="bloque-1-subtitulos-home">
+                            <i class="fa-solid fa-desktop iconos-subtitulos-home"></i>
 
+                            <p class="h6">100% <span class="subtexto-1-home"> Online</span></p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="bloque-2-subtitulos-home">
+                            <i class="fa-solid fa-building-columns iconos-subtitulos-home"></i>
 
-    <!-- TradingView Widget BEGIN -->
-    <div class="tradingview-widget-container">
-    <div class="tradingview-widget-container__widget"></div>
-    <div class="tradingview-widget-copyright"><a href="https://es.tradingview.com" rel="noopener" target="_blank"><span class="blue-text">Cotizaciones</span></a> por TradingView</div>
-    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-tickers.js" async>
-    {
-    "symbols": [
-      {
-        "proName": "FOREXCOM:SPXUSD",
-        "title": "S&P 500"
-      },
-      {
-        "proName": "FOREXCOM:NSXUSD",
-        "title": "US 100"
-      },
-      {
-        "proName": "FX_IDC:EURUSD",
-        "title": "EUR/USD"
-      },
-      {
-        "proName": "BITSTAMP:BTCUSD",
-        "title": "Bitcoin"
-      },
-      {
-        "proName": "BITSTAMP:ETHUSD",
-        "title": "Ethereum"
-      }
-    ],
-    "colorTheme": "dark",
-    "isTransparent": true,
-    "showSymbolLogo": true,
-    "locale": "es"
-  }
-    </script>
-  </div>
-  <!-- TradingView Widget END -->
+                            <p class="h6">Certificado con <span class="subtexto-2-home">reconocimiento
+                                    internacional.</span></p>
+                        </div>
+                    </div>
+                </div>
 
-    <!-- segunda parte -->
+            </div>
 
-    <div class="second-part">
-
-        <div class="fotos">
-            <h3>100% Online</h3>
-            <p>Aprende desde la comodidad de tu casa mediante clases en vivo, ajustando
-                el horario a tus necesidades.
-            </p>
-        </div>
-
-
-        <div class="fotos">
-            <h3> No requiere <span>conocimientos previos </span>
-            </h3>
-            <p>Te enseñamos las bases de los mercados para que puedas comenzar a relacionarte de la manera
-            correcta.
-            </p>
-        </div>
-
-
-        <div class="fotos">
-            <h3>Expositores <span>internacionales</span></h3>
-            <p>Aprende junto a Traders reconocidos internacionalmente y con una ámplia trayectoria
-                en los mercados financieros.
-            </p>
-        </div>
-
-
-    </div>
-
-    <!-- tercera parte -->
-
-    <div class="third-part">
-
-        <img src="pictures/chart2.jpg" id="chart-image" alt="">
-
-        <div>
-
-            <h2> Aprende a analizar e invertir <span> sobre cualquier activo financiero.</span></span></h2>
-
-            <p> El curso en Mercados Financieros y Trading te permitirá analizar e interpretar los mercados
-                financieros mundiales,<span> gestionar eficazmente cualquier cartera o patrimonio y profundizar en la
-                realidad de los productos financieros actuales para poderlos trasladar a los clientes o a tu
-                operativa.</span>
-            </p>
+            <div class="col-12 col-md-6 col-sm-12 imagen-principal">
+                <img class="home-image" src="/pictures/principal-photo.png" alt="">
+            </div>
         </div>
 
     </div>
 
+    <div class="container widget-tradingview-home">
+        <!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+            <div class="tradingview-widget-container__widget"></div>
 
-    <!-- cuarta parte -->
+            <script type="text/javascript"
+                src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+                {
+                    "symbols": [{
+                            "proName": "FOREXCOM:SPXUSD",
+                            "title": "S&P 500"
+                        },
+                        {
+                            "proName": "FOREXCOM:NSXUSD",
+                            "title": "US 100"
+                        },
+                        {
+                            "proName": "FX_IDC:EURUSD",
+                            "title": "EUR/USD"
+                        },
+                        {
+                            "proName": "BITSTAMP:BTCUSD",
+                            "title": "Bitcoin"
+                        },
+                        {
+                            "proName": "BITSTAMP:ETHUSD",
+                            "title": "Ethereum"
+                        }
+                    ],
+                    "showSymbolLogo": true,
+                    "colorTheme": "light",
+                    "isTransparent": true,
+                    "displayMode": "adaptive",
+                    "locale": "es"
+                }
+            </script>
+        </div>
+        <!-- TradingView Widget END -->
 
-    <div class="fourth-part">
-        <h2><span>Controla una ámplia cartera </span>de la mejor manera. </h2>
-
-        <img src="pictures/stocks.png" alt="">
-
-        <p><span id="span2">Conoce las estrategias de inversión adecuadas a cada perfil de riesgo y ven a nuestro
-                tradingfloor, ubicado en la torre 4 de World Trade Center, a </span> operar y poner en práctica tus
-            conocimientos con distintos actores de la industria.</p>
-
-        <p><a href="pages/cursos.html" id="mas-info">Más información</a></p>
     </div>
 
+    <div class="container-fluid container-segunda-parte-home">
 
-    <!-- quinta parte -->
+        <div class="row textos-segunda-parte-home">
 
-    <div class="fift-part">
-        <div id="img-map" class="mapa">
-            <img src="pictures/map.png" alt="">
-        </div>
-        <div class="fift-h2">
-            <h2>Finanzas de calidad, para <span>todo el mundo.</span></h2>
-            <div class="links-fift-part">
-                <p><a href="pages/cursos.html" id="cursos-bttn1">Ver Nuestros
-                        Cursos</a></p>
-                <p><a href="pages/contacto.html" id="cursos-bttn2">Contacta con nosotros</a></p>
+            <div class="col-12 col-xl-6 col-lg-6 col-md-6 col-sm-12" id="col-izq-segunda-parte-home">
+                <h2>Aprende a analizar e invertir sobre <span class="text-muted"> cualquier activo financiero.</span>
+                </h2>
+
+                <p>El curso en Mercados Financieros y Trading te permitirá analizar e interpretar los mercados
+                    financieros mundiales, gestionar eficazmente cualquier cartera o patrimonio y profundizar en la
+                    realidad de los productos financieros actuales para poderlos trasladar a los clientes o a tu
+                    operativa.</p>
+
+                <div class="buttons-segunda-parte-home">
+                    <button type="button" class="btn btn-dark"><a href="/pages/contacto.html">Contactanos</a></button>
+                    <button type="button" class="btn btn-outline-dark"><a href="#">Ver Nuestros Cursos</a></button>
+
+
+                </div>
+
+
+            </div>
+
+            <div class="col-12 col-xl-6 col-lg-6 col-md-6 col-sm-12" id="imagen-segunda-parte-home">
+                <img src="/pictures/chart-1.png" alt="">
             </div>
         </div>
     </div>
 
+    <div class="container-fluid container-tercera-parte-home">
 
-    <!-- footer -->
-    <footer>
+        <div class="row textos-tercera-parte-home">
 
-        <div class="grid-principal-footer">
-
-            <div class="disclaimer-title-footer">
-                <h4>ADVERTENCIA DE RIESGO</h4>
+            <div class="col-12 col-xl-6 col-lg-6 col-md-6 col-sm-12" id="imagen-tercera-parte-home">
+                <img src="/pictures/chart2-02.png" alt="">
             </div>
 
-            <div class="disclaimer-p-footer">
-                <p>La especulación financiera entraña mucho riesgo y no está recomendada para todo el público. Los
+            <div class="col-12 col-xl-6 col-lg-6 col-md-6 col-sm-12" id="col-der-tercera-parte-home">
+                <h2>Controla una ámplia cartera <span class="text-muted"> de la mejor manera.</span></h2>
+
+                <p>Conoce las estrategias de inversión adecuadas a cada perfil de riesgo y ven a nuestro
+                    tradingfloor, ubicado en la torre 4 de World Trade Center, a operar y poner en práctica tus
+                    conocimientos con distintos actores de la industria.</p>
+
+                <div class="buttons-tercera-parte-home">
+                    <button type="button" class="btn btn-outline-dark" id="button-2-tercera-parte-home"><a href="#">Ver Nuestros Cursos</a></button>
+                    <button type="button" class="btn btn-dark"><a href="/pages/contacto.html">Contactanos</a></button>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <!-- TERMINA SEGUNDA PARTE HOME -->
+
+    <!--  -->
+
+    <!-- INICIA TERCERA PARTE HOME -->
+
+    <div class="container-fluid contenedor-tercera-parte-home">
+
+        <div class="row">
+
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 col-1-tercera-parte-home">
+                <h2>Analiza directamente <span class="text-muted"> desde nuestra Web.</span></h2>
+            </div>
+
+            <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12" id="img-tercera-parte-home">
+                <img src="/pictures/stocks.png" alt="">
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12" id="col-2-tercera-parte-home">
+                <p>Conoce las estrategias de inversión adecuadas a cada perfil de riesgo y ven a nuestro
+                    tradingfloor, ubicado en la torre 4 de World Trade Center, a operar y poner en práctica tus
+                    conocimientos con distintos actores de la industria.</p>
+            </div>
+
+            <div class="col" id="links-tercera-parte-home">
+                <button type="button" class="btn btn-outline-primary"><a href="pages/scanner.html">Ir al Scanner</a></button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- TERMINA TERCERA PARTE HOME -->
+
+    <!--  -->
+
+    <!-- FOOTER -->
+
+        <footer class="text-center text-white" style="background-color: #005cff">
+            <!-- Grid container -->
+            <div class="container">
+                <!-- Section: Links -->
+                <section class="mt-5">
+                    <!-- Grid row-->
+                    <div class="row text-center d-flex justify-content-center pt-5">
+                        <!-- Grid column -->
+                        <div class="col-md-2">
+                            <h6 class="text-uppercase font-weight-bold">
+                                <a href="index.html" class="text-white">Inicio</a>
+                            </h6>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-2">
+                            <h6 class="text-uppercase font-weight-bold">
+                                <a href="#!" class="text-white">Cursos</a>
+                            </h6>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-2">
+                            <h6 class="text-uppercase font-weight-bold">
+                                <a href="/pages/scanner.html" class="text-white">Scanner</a>
+                            </h6>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-2">
+                            <h6 class="text-uppercase font-weight-bold">
+                                <a href="pages/disclaimer.html" class="text-white">Disclaimer</a>
+                            </h6>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-2">
+                            <h6 class="text-uppercase font-weight-bold">
+                                <a href="/pages/contacto.html" class="text-white">Contacto</a>
+                            </h6>
+                        </div>
+                        <!-- Grid column -->
+                    </div>
+                    <!-- Grid row-->
+                </section>
+                <!-- Section: Links -->
+
+                <hr class="my-5" />
+
+                <!-- Section: Text -->
+                <section class="mb-5">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-lg-8">
+                            <p>
+                                La especulación financiera entraña mucho riesgo y no está recomendada para todo el público. Los
                     instrumentos financieros son productos apalancados y pueden dar lugar a pérdidas superiores a su
                     inversión inicial. Es requisito indispensable, tener los conocimientos, juicio y sentido común
                     necesarios. THEMARKETSLAB no se responsabiliza de los resultados, positivos o negativos, que pueda
-                    obtener un usuario. Toda la información compartida está basada en nuestra interpretación y propia
-                    visión de los mercados. Son presentados solo bajo un propósito educativo y en ningún momento, se dan
-                    recomendaciones específicas de compra o venta.
-                </p>
+                    obtener un usuario.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <!-- Section: Text -->
+
+                <!-- Section: Social -->
+                <section class="text-center mb-5">
+                    <a href="" class="text-white me-4">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="" class="text-white me-4">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="" class="text-white me-4">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="" class="text-white me-4">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="" class="text-white me-4">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="" class="text-white me-4">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </section>
+                <!-- Section: Social -->
             </div>
+            <!-- Grid container -->
 
-            <div class="disclaimer-p2-footer">
-                <p>Para comunicarte con THEMARKETSLAB de manera directa y efectiva, puedes remitir un correo electrónico
-                    a la siguiente dirección de correo electrónico: hola@themarketslab.com</p>
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+                © 2020 Copyright:
+                <a class="text-white" href="https://mdbootstrap.com/">TheMarketsLab.com</a>
             </div>
+            <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
 
-            <div class="nav-footer">
-                <!-- nav -->
-                <div class="nav-bar">
-                    <li><a href="index.html" class="nav-articles">Inicio</a></li>
-                    <li><a href="pages/cursos.html" class="nav-articles">Cursos</a></li>
-                    <li><a href="pages/reportes.html" class="nav-articles">Reportes</a>
-                    </li>
-                    <li><a href="pages/contacto.html" class="nav-articles">Contacto</a>
-                    </li>
-                    <li><a href="pages/disclaimer.html" class="nav-articles">Disclaimer</a>
-                    </li>
+    <!-- SCRIPTS BOOTSTRAP -->
 
-                </div>
-            </div>
-
-            <div class="icons-footer">
-                <i class="fa-brands fa-facebook"></i>
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-solid fa-location-crosshairs"></i>
-                <i class="fa-solid fa-phone"></i>
-            </div>
-
-            
-        </div>
-
-        <div class="logo-footer">
-            <img src="/pictures/logo-white.png" alt="">
-        </div>
-    </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+        integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
