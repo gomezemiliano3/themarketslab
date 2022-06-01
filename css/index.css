@@ -478,6 +478,8 @@ a{
         position:absolute;
     }
 
+    
+
     .container-principal-home {
         padding: 0;
         display: flex;
@@ -486,10 +488,14 @@ a{
         justify-content: center;
     }
 
+
+
     .texto-principal{
         font-size: 5rem;
         width: 80%;
     }
+
+
 
     .home-image {
         width: 80%;
