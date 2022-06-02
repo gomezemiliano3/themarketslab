@@ -21,7 +21,7 @@
         <div class="container-fluid" id="container-nav">
             <nav class="navbar navbar-expand-md">
                 <!-- Brand -->
-                <a class="navbar-brand" href="/index.html">
+                <a class="navbar-brand" href="#">
                     <img src="/pictures/logo-black.png" alt="" height="40">
                 </a>
 
@@ -37,11 +37,13 @@
                             <a class="nav-link" href="/index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Cursos</a>
+                            <a class="nav-link" href="contacto.html">Contacto</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="scanner-border" href="/pages/scanner.html">Scanner</a>
+                            <a class="nav-link" id="scanner-border" href="pages/scanner.html">Scanner</a>
                         </li>
+
+
 
                         <div class="carrito-item">
                             <i class="fa-solid fa-bag-shopping carrito"></i>
@@ -52,154 +54,55 @@
         </div>
     </header>
 
-    <div class="container text-center container-principal-texto-scanner">
-        <h2>Analiza todos los mercados <span class="text-muted">en tiempo real.</span></h2>
+    <div class="container container-texto-principal-scanner text-center">
+        <h2 class="texto-principal-scanner">
+            Analiza todos los mercados <span class="text-muted">en tiempo real.</span>
+        </h2>
+        <p><span class="text-muted"> Analiza cualquier mercado, aplica indicadores creados por la comunidad.</span></p>
     </div>
 
 
-    <div class="container-fluid container-principal-widgets">
-        <div class="row container-secundario-widgets">
-            <div class="col col-xl-7 col-lg-8 col-md-8 col-sm-12">
+    <!-- FULL CHART -->
+    <div class="container full-chart-scanner">
+
+        <!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container full-chart-scanner">
+            <div id="tradingview_40f35"></div>
+            <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+            <script type="text/javascript">
+                new TradingView.widget({
+                    "width": "100%",
+                    "height": "100%",
+                    "symbol": "NASDAQ:AAPL",
+                    "interval": "1",
+                    "timezone": "Etc/UTC",
+                    "theme": "light",
+                    "style": "1",
+                    "locale": "es",
+                    "toolbar_bg": "#f1f3f6",
+                    "enable_publishing": false,
+                    "allow_symbol_change": true,
+                    "container_id": "tradingview_40f35"
+                });
+            </script>
+        </div>
+        <!-- TradingView Widget END -->
+    </div>
+    <!-- TERMINA FULL CHART -->
+
+
+    <!-- SEGUNDA PARTE SCANNER -->
+    <div class="container text-center text-resumen-macroeconomico">
+        <h2>Resumen <span class="text-muted">Macroeconómico.</span> </h2>
+        <p><span class="text-muted">Observa los mercados desde una perspectiva macroeconómica.</span></p>
+    </div>
+
+    <div class="container container-widget-left-market">
+
+        <div class="row wlm">
+            <div class="col-12 col-md-6 col-sm-12 widget-left-market">
                 <!-- TradingView Widget BEGIN -->
-                <div class="tradingview-widget-container-1">
-                    <div class="tradingview-widget-container__widget"></div>
-
-                    <script type="text/javascript"
-                        src="https://s3.tradingview.com/external-embedding/embed-widget-market-quotes.js" async>
-                        {
-                            "width": "100%",
-                            "height": "100%",
-                            "symbolsGroups": [{
-                                    "name": "Índices",
-                                    "originalName": "Indices",
-                                    "symbols": [{
-                                            "name": "FOREXCOM:SPXUSD",
-                                            "displayName": "S&P 500"
-                                        },
-                                        {
-                                            "name": "FOREXCOM:NSXUSD",
-                                            "displayName": "US 100"
-                                        },
-                                        {
-                                            "name": "FOREXCOM:DJI",
-                                            "displayName": "Dow 30"
-                                        },
-                                        {
-                                            "name": "INDEX:NKY",
-                                            "displayName": "Nikkei 225"
-                                        },
-                                        {
-                                            "name": "INDEX:DEU40",
-                                            "displayName": "DAX Index"
-                                        },
-                                        {
-                                            "name": "FOREXCOM:UKXGBP",
-                                            "displayName": "UK 100"
-                                        }
-                                    ]
-                                },
-                                {
-                                    "name": "Futuros",
-                                    "originalName": "Futures",
-                                    "symbols": [{
-                                            "name": "CME_MINI:ES1!",
-                                            "displayName": "S&P 500"
-                                        },
-                                        {
-                                            "name": "CME:6E1!",
-                                            "displayName": "Euro"
-                                        },
-                                        {
-                                            "name": "COMEX:GC1!",
-                                            "displayName": "Gold"
-                                        },
-                                        {
-                                            "name": "NYMEX:CL1!",
-                                            "displayName": "Crude Oil"
-                                        },
-                                        {
-                                            "name": "NYMEX:NG1!",
-                                            "displayName": "Natural Gas"
-                                        },
-                                        {
-                                            "name": "CBOT:ZC1!",
-                                            "displayName": "Corn"
-                                        }
-                                    ]
-                                },
-                                {
-                                    "name": "Bonos",
-                                    "originalName": "Bonds",
-                                    "symbols": [{
-                                            "name": "CME:GE1!",
-                                            "displayName": "Eurodollar"
-                                        },
-                                        {
-                                            "name": "CBOT:ZB1!",
-                                            "displayName": "T-Bond"
-                                        },
-                                        {
-                                            "name": "CBOT:UB1!",
-                                            "displayName": "Ultra T-Bond"
-                                        },
-                                        {
-                                            "name": "EUREX:FGBL1!",
-                                            "displayName": "Euro Bund"
-                                        },
-                                        {
-                                            "name": "EUREX:FBTP1!",
-                                            "displayName": "Euro BTP"
-                                        },
-                                        {
-                                            "name": "EUREX:FGBM1!",
-                                            "displayName": "Euro BOBL"
-                                        }
-                                    ]
-                                },
-                                {
-                                    "name": "Forex",
-                                    "originalName": "Forex",
-                                    "symbols": [{
-                                            "name": "FX:EURUSD",
-                                            "displayName": "EUR/USD"
-                                        },
-                                        {
-                                            "name": "FX:GBPUSD",
-                                            "displayName": "GBP/USD"
-                                        },
-                                        {
-                                            "name": "FX:USDJPY",
-                                            "displayName": "USD/JPY"
-                                        },
-                                        {
-                                            "name": "FX:USDCHF",
-                                            "displayName": "USD/CHF"
-                                        },
-                                        {
-                                            "name": "FX:AUDUSD",
-                                            "displayName": "AUD/USD"
-                                        },
-                                        {
-                                            "name": "FX:USDCAD",
-                                            "displayName": "USD/CAD"
-                                        }
-                                    ]
-                                }
-                            ],
-                            "showSymbolLogo": true,
-                            "colorTheme": "light",
-                            "isTransparent": false,
-                            "locale": "es"
-                        }
-                    </script>
-                </div>
-                <!-- TradingView Widget END -->
-            </div>
-
-            <div class="col col-xl-3 col-lg-3 col-md-3 col-sm-12">
-
-                <!-- TradingView Widget BEGIN -->
-                <div class="tradingview-widget-container-2">
+                <div class="tradingview-widget-container">
                     <div class="tradingview-widget-container__widget"></div>
                     <script type="text/javascript"
                         src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js" async>
@@ -213,10 +116,10 @@
                             "largeChartUrl": "",
                             "isTransparent": false,
                             "showSymbolLogo": true,
-                            "showFloatingTooltip": false,
+                            "showFloatingTooltip": true,
                             "plotLineColorGrowing": "rgba(41, 98, 255, 1)",
                             "plotLineColorFalling": "rgba(41, 98, 255, 1)",
-                            "gridLineColor": "rgba(42, 46, 57, 0)",
+                            "gridLineColor": "rgba(0, 0, 0, 0.65)",
                             "scaleFontColor": "rgba(120, 123, 134, 1)",
                             "belowLineFillColorGrowing": "rgba(41, 98, 255, 0.12)",
                             "belowLineFillColorFalling": "rgba(41, 98, 255, 0.12)",
@@ -224,35 +127,6 @@
                             "belowLineFillColorFallingBottom": "rgba(41, 98, 255, 0)",
                             "symbolActiveColor": "rgba(41, 98, 255, 0.12)",
                             "tabs": [{
-                                    "title": "Índices",
-                                    "symbols": [{
-                                            "s": "FOREXCOM:SPXUSD",
-                                            "d": "S&P 500"
-                                        },
-                                        {
-                                            "s": "FOREXCOM:NSXUSD",
-                                            "d": "US 100"
-                                        },
-                                        {
-                                            "s": "FOREXCOM:DJI",
-                                            "d": "Dow 30"
-                                        },
-                                        {
-                                            "s": "INDEX:NKY",
-                                            "d": "Nikkei 225"
-                                        },
-                                        {
-                                            "s": "INDEX:DEU40",
-                                            "d": "DAX Index"
-                                        },
-                                        {
-                                            "s": "FOREXCOM:UKXGBP",
-                                            "d": "UK 100"
-                                        }
-                                    ],
-                                    "originalTitle": "Indices"
-                                },
-                                {
                                     "title": "Futuros",
                                     "symbols": [{
                                             "s": "CME_MINI:ES1!",
@@ -277,6 +151,14 @@
                                         {
                                             "s": "CBOT:ZC1!",
                                             "d": "Corn"
+                                        },
+                                        {
+                                            "s": "MCX:CRUDEOIL1!",
+                                            "d": "Crude Oil Futures"
+                                        },
+                                        {
+                                            "s": "COMEX:GC1!",
+                                            "d": "Gold Futures"
                                         }
                                     ],
                                     "originalTitle": "Futures"
@@ -335,6 +217,18 @@
                                         {
                                             "s": "FX:USDCAD",
                                             "d": "USD/CAD"
+                                        },
+                                        {
+                                            "s": "FX:EURGBP",
+                                            "d": "EUR/GBP"
+                                        },
+                                        {
+                                            "s": "FX:EURAUD",
+                                            "d": "EUR/AUD"
+                                        },
+                                        {
+                                            "s": "FX:EURNZD",
+                                            "d": "EUR/NZD"
                                         }
                                     ],
                                     "originalTitle": "Forex"
@@ -345,108 +239,47 @@
                 </div>
                 <!-- TradingView Widget END -->
             </div>
-        </div>
-    </div>
 
-
-    <!-- CONTAINER FULL CHART -->
-
-    <div class="container-fluid container-3-widget">
-
-        <div class="row row-container-full-chart">
-
-            <div class="col col-xl-12 col-lg-12 col-full-chart">
-
+            <div class="col-12 col-md-6 widget-right-market">
                 <!-- TradingView Widget BEGIN -->
-                <div class="tradingview-widget-container full-chart">
-                    <div id="tradingview_1163d"></div>
-                    <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
-                    <script type="text/javascript">
-                        new TradingView.widget({
+                <div class="tradingview-widget-container">
+                    <div class="tradingview-widget-container__widget"></div>
+                    <script type="text/javascript"
+                        src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+                        {
+                            "interval": "1m",
                             "width": "100%",
+                            "isTransparent": false,
                             "height": "100%",
                             "symbol": "NASDAQ:AAPL",
-                            "interval": "D",
-                            "timezone": "Etc/UTC",
-                            "theme": "light",
-                            "style": "1",
+                            "showIntervalTabs": true,
                             "locale": "es",
-                            "toolbar_bg": "#f1f3f6",
-                            "enable_publishing": false,
-                            "hide_side_toolbar": false,
-                            "allow_symbol_change": true,
-                            "studies": [
-                                "HV@tv-basicstudies"
-                            ],
-                            "container_id": "tradingview_1163d"
-                        });
+                            "colorTheme": "light"
+                        }
                     </script>
                 </div>
                 <!-- TradingView Widget END -->
-            </div>
-        </div>
-    </div>
 
-    <div class="container-fluid tercera-parte-scanner">
-        <div class="container container-tercera-parte-scanner">
-
-            <div class="row row-tercera-parte-scanner">
-                <div class="col col-xl-6 col-lg-6 col-tercera-parte-scanner text-center">
-                    <h3>Tipos cruzados del mercado de divisas</h3>
-
+                <div class="col-12 col-md-12 col-sm-12 widget-right-bottom-market">
                     <!-- TradingView Widget BEGIN -->
-                    <div class="tradingview-widget-container tradingview-widget-container-3">
+                    <div class="tradingview-widget-container">
                         <div class="tradingview-widget-container__widget"></div>
                         <script type="text/javascript"
-                            src="https://s3.tradingview.com/external-embedding/embed-widget-forex-cross-rates.js" async>
+                            src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js"
+                            async>
                             {
+                                "symbol": "NASDAQ:AAPL",
                                 "width": "100%",
                                 "height": "100%",
-                                "currencies": [
-                                    "EUR",
-                                    "USD",
-                                    "JPY",
-                                    "GBP",
-                                    "CHF",
-                                    "AUD",
-                                    "CAD",
-                                    "NZD",
-                                    "CNY"
-                                ],
-                                "isTransparent": false,
+                                "locale": "es",
+                                "dateRange": "12M",
                                 "colorTheme": "light",
-                                "locale": "es"
-                            }
-                        </script>
-                    </div>
-                    <!-- TradingView Widget END -->
-                </div>
-
-                <div class="col col-xl-6 col-lg-6 text-center">
-                    <h3>Mapa de calor Forex</h3>
-
-                    <!-- TradingView Widget BEGIN -->
-                    <div class="tradingview-widget-container tradingview-widget-container-4">
-                        <div class="tradingview-widget-container__widget"></div>
-                        <script type="text/javascript"
-                            src="https://s3.tradingview.com/external-embedding/embed-widget-forex-heat-map.js" async>
-                            {
-                                "width": "100%",
-                                "height": "100%",
-                                "currencies": [
-                                    "EUR",
-                                    "USD",
-                                    "JPY",
-                                    "GBP",
-                                    "CHF",
-                                    "AUD",
-                                    "CAD",
-                                    "NZD",
-                                    "CNY"
-                                ],
+                                "trendLineColor": "rgba(41, 98, 255, 1)",
+                                "underLineColor": "rgba(41, 98, 255, 0.3)",
+                                "underLineBottomColor": "rgba(41, 98, 255, 0)",
                                 "isTransparent": false,
-                                "colorTheme": "light",
-                                "locale": "es"
+                                "autosize": true,
+                                "largeChartUrl": ""
                             }
                         </script>
                     </div>
@@ -455,124 +288,156 @@
             </div>
 
         </div>
+
+    </div>
+    <!-- TERMINA SEGUNDA PARTE SCANNER -->
+
+    <!-- TERCERA PARTE SCANNER -->
+
+    <div class="container text-center tipos-cruzados-text">
+        <h2>Tipos Cruzados <span class="text-muted"> en los Mercados de Divisas.</span></h2>
+        <p><span class="text-muted">Vé las cotizaciones en tiempo real de las divisas seleccionadas y compararlas con
+                otras divisas importantes.</span></p>
     </div>
 
-        <!-- FOOTER -->
 
-        <footer class="text-center text-white" style="background-color: #005cff">
-            <!-- Grid container -->
-            <div class="container">
-                <!-- Section: Links -->
-                <section class="mt-5">
-                    <!-- Grid row-->
-                    <div class="row text-center d-flex justify-content-center pt-5">
-                        <!-- Grid column -->
-                        <div class="col-md-2">
-                            <h6 class="text-uppercase font-weight-bold">
-                                <a href="index.html" class="text-white">Inicio</a>
-                            </h6>
-                        </div>
-                        <!-- Grid column -->
+    <div class="container container-tercera-parte-scanner">
+        <!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+            <div class="tradingview-widget-container__widget"></div>
+            <script type="text/javascript"
+                src="https://s3.tradingview.com/external-embedding/embed-widget-forex-cross-rates.js" async>
+                {
+                    "width": "100%",
+                    "height": "100%",
+                    "currencies": [
+                        "EUR",
+                        "USD",
+                        "JPY",
+                        "GBP",
+                        "CHF",
+                        "AUD",
+                        "CAD",
+                        "NZD",
+                        "CNY"
+                    ],
+                    "isTransparent": false,
+                    "colorTheme": "light",
+                    "locale": "es"
+                }
+            </script>
+        </div>
+        <!-- TradingView Widget END -->
+    </div>
 
-                        <!-- Grid column -->
-                        <div class="col-md-2">
-                            <h6 class="text-uppercase font-weight-bold">
-                                <a href="#!" class="text-white">Contacto</a>
-                            </h6>
-                        </div>
-                        <!-- Grid column -->
+    <!-- FOOTER -->
 
-                        <!-- Grid column -->
-                        <div class="col-md-2">
-                            <h6 class="text-uppercase font-weight-bold">
-                                <a href="#!" class="text-white">Scanner</a>
-                            </h6>
-                        </div>
-                        <!-- Grid column -->
-
-                        <!-- Grid column -->
-                        <div class="col-md-2">
-                            <h6 class="text-uppercase font-weight-bold">
-                                <a href="#!" class="text-white">Disclaimer</a>
-                            </h6>
-                        </div>
-                        <!-- Grid column -->
-
-                        <!-- Grid column -->
-                        <div class="col-md-2">
-                            <h6 class="text-uppercase font-weight-bold">
-                                <a href="#!" class="text-white">Contacto</a>
-                            </h6>
-                        </div>
-                        <!-- Grid column -->
+    <footer class="text-center text-white" style="background-color: #005cff">
+        <!-- Grid container -->
+        <div class="container">
+            <!-- Section: Links -->
+            <section class="mt-5">
+                <!-- Grid row-->
+                <div class="row text-center d-flex justify-content-center pt-5">
+                    <!-- Grid column -->
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <a href="/index.html" class="text-white">Inicio</a>
+                        </h6>
                     </div>
-                    <!-- Grid row-->
-                </section>
-                <!-- Section: Links -->
+                    <!-- Grid column -->
 
-                <hr class="my-5" />
-
-                <!-- Section: Text -->
-                <section class="mb-5">
-                    <div class="row d-flex justify-content-center">
-                        <div class="col-lg-8">
-                            <p>
-                                La especulación financiera entraña mucho riesgo y no está recomendada para todo el público. Los
-                    instrumentos financieros son productos apalancados y pueden dar lugar a pérdidas superiores a su
-                    inversión inicial. Es requisito indispensable, tener los conocimientos, juicio y sentido común
-                    necesarios. THEMARKETSLAB no se responsabiliza de los resultados, positivos o negativos, que pueda
-                    obtener un usuario.
-                            </p>
-                        </div>
+                    <!-- Grid column -->
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <a href="#!" class="text-white">Cursos</a>
+                        </h6>
                     </div>
-                </section>
-                <!-- Section: Text -->
+                    <!-- Grid column -->
 
-                <!-- Section: Social -->
-                <section class="text-center mb-5">
-                    <a href="" class="text-white me-4">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="" class="text-white me-4">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="" class="text-white me-4">
-                        <i class="fab fa-google"></i>
-                    </a>
-                    <a href="" class="text-white me-4">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="" class="text-white me-4">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="" class="text-white me-4">
-                        <i class="fab fa-github"></i>
-                    </a>
-                </section>
-                <!-- Section: Social -->
-            </div>
-            <!-- Grid container -->
+                    <!-- Grid column -->
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <a href="/pages/scanner.html" class="text-white">Scanner</a>
+                        </h6>
+                    </div>
+                    <!-- Grid column -->
 
-            <!-- Copyright -->
-            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-                © 2020 Copyright:
-                <a class="text-white" href="https://mdbootstrap.com/">TheMarketsLab.com</a>
-            </div>
-            <!-- Copyright -->
-        </footer>
-        <!-- Footer -->
+                    <!-- Grid column -->
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <a href="/pages/disclaimer.html" class="text-white">Disclaimer</a>
+                        </h6>
+                    </div>
+                    <!-- Grid column -->
 
-    <!-- SCRIPTS BOOTSTRAP -->
+                    <!-- Grid column -->
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <a href="/pages/contacto.html" class="text-white">Contacto</a>
+                        </h6>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row-->
+            </section>
+            <!-- Section: Links -->
 
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
-        integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous">
-    </script>
+            <hr class="my-5" />
+
+            <!-- Section: Text -->
+            <section class="mb-5">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-lg-8">
+                        <p>
+                            La especulación financiera entraña mucho riesgo y no está recomendada para todo el público.
+                            Los
+                            instrumentos financieros son productos apalancados y pueden dar lugar a pérdidas superiores
+                            a su
+                            inversión inicial. Es requisito indispensable, tener los conocimientos, juicio y sentido
+                            común
+                            necesarios. THEMARKETSLAB no se responsabiliza de los resultados, positivos o negativos, que
+                            pueda
+                            obtener un usuario.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <!-- Section: Text -->
+
+            <!-- Section: Social -->
+            <section class="text-center mb-5">
+                <a href="" class="text-white me-4">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="" class="text-white me-4">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="" class="text-white me-4">
+                    <i class="fab fa-google"></i>
+                </a>
+                <a href="" class="text-white me-4">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="" class="text-white me-4">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="" class="text-white me-4">
+                    <i class="fab fa-github"></i>
+                </a>
+            </section>
+            <!-- Section: Social -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+            © 2022 Copyright:
+            <a class="text-white" href="https://mdbootstrap.com/">TheMarketsLab.com</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
 </body>
 
 </html>

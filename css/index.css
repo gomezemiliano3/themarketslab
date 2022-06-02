@@ -37,8 +37,6 @@ a{
 #container-nav {
     padding: 0;
     background-color: white;
-    position: fixed;
-    z-index: 1;
 }
 
 .nav-link {
@@ -68,6 +66,11 @@ a{
 .nav-item {
     text-align: center;
     width: 100%;
+}
+
+.navbar-collapse {
+    z-index: 2;
+    display:inline-block;
 }
 
 #scanner-border {
@@ -339,112 +342,109 @@ a{
 /* INCIA SCANNER */
 
 /* INICIA PRIMERA PARTE SCANNER */
-
-.container-principal-texto-scanner {
-    height: 30vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.container-texto-principal-scanner {
+    padding-top: 4%;
 }
 
-.container-principal-widgets {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.full-chart-scanner {
+    height: 30rem;
     width: 100%;
-    height: 100vh;
-    margin: 0;
     padding: 0;
 }
-
-.container-secundario-widgets {
-    width: 90%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    margin: 0;
-}
-
-.tradingview-widget-container-1 {
-    width: 90%;
-    height: 90vh;
-}
-
-.tradingview-widget-container-2 {
-    width: 90%;
-    height:90vh;
-}
-
-
-/* CONTAINER FULL CHART */
-
-.container-3-widget {
-    width: 100%;
-    height: 100vh;
-}
-
-.row-container-full-chart{
-    width:90%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-}
-
-.col-full-chart {
-    height: auto;
-    width: 100%;
-}
-
-.full-chart {
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
-}
-
-
 /* TERMINA PRIMERA PARTE SCANNER */
 
-/* TERCERA PARTE SCANNER */
 
-/* TERMINAR TERCERA PARTE SCANNER */
-
-.tercera-parte-scanner {
-    height: 100vh;
-    width: 100%;
+/* INICIA SEGUNDA PARTE SCANNER */
+.text-resumen-macroeconomico {
+    padding-top: 4%;
 }
 
-.container-tercera-parte-scanner{
-    height: 100%;
-    width: 100%;
-    margin: 0 auto;
+.container-widget-left-market {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    height: 40rem;
     padding: 0;
-    display: flex;
-    margin-top: 5%;
 }
 
-.row-tercera-parte-scanner{
-    height: 100%;
-    width: 90%;
-}
-
-.col-tercera-parte-scanner{
-    height: 100%;
+.wlm {
+    height: auto;
     width: 100%;
 }
 
-.tradingview-widget-container-3 {
-    width: 100%;
-    margin-right: 20%;
+.widget-left-market {
+    height: 40rem;
+    padding-left: 0;
 }
 
-.tradingview-widget-container-4 {
+.widget-right-market {
+    padding: 0;
+    height: 25rem;
     width: 100%;
-    margin-left: 20%;
+}
+
+.widget-right-bottom-market {
+    height: 15rem;
+    width: 100%;
+    padding: 0;
+    padding-top: 15px;
+}
+/* TERMINA SEGUNDA PARTE SCANNER */
+
+
+/* INICIA TERCERA PARTE SCANNER */
+
+.container-tercera-parte-scanner {
+    height: 40rem;
+    width: 100%;
+    padding: 0;
+}
+
+.tipos-cruzados-text {
+    padding-top: 2%;
 }
 
 
-/* TERMINA SCANNER */
+/* TERMINA TERCERA PARTE SCANNER */
+
+
+/* INICIA CUARTA PARTE SCANNER */
+
+.container-cuarta-parte-scanner {
+    width: 100%;
+    height: 40rem;
+    background-color: red;
+    width: 100%;
+}
+
+/* TERMINA CUARTA PARTE SCANNER */
+
+
+
+/* MEDIA SCANNER */
+
+@media (max-width: 768px) {
+
+    .container-texto-principal-scanner {
+        padding-top: 25%;
+    }
+
+    .container-tercera-parte-scanner {
+        height: 40rem;
+    }
+
+    .tipos-cruzados-text {
+        margin-top: 45rem;
+        padding: 0;
+    }
+
+    .widget-left-market {
+        height: 40rem;
+        padding: 0;
+        margin-bottom: 3%;
+    }
+
+}
+
 
 
 /* CONTACTO */
@@ -551,3 +551,42 @@ a{
 
 }
 /* MEDIA QUERIES HOME TERMINA */
+
+
+/* MEDIA QUERIES SCANNER INICIA*/
+
+@media (max-width: 768px) {
+
+    .container-texto-principal-scanner {
+        padding-top: 25%;
+    }
+
+    .container-tercera-parte-scanner {
+        height: 40rem;
+    }
+
+    .tipos-cruzados-text {
+        margin-top: 45rem;
+        padding: 0;
+    }
+
+    .widget-left-market {
+        height: 40rem;
+        padding: 0;
+        margin-bottom: 3%;
+    }
+
+}
+/* MEDIA QUERIES SCANNER TERMINA */
+
+
+/* MEDIA QUERIES CONTACTO INICIA */
+
+@media (max-width: 768px) {
+    #contacto {
+        padding-top: 5rem;
+    }
+}
+
+
+/* MEDIA QUERIES CONTACTO TERMINA */
