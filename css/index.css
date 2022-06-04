@@ -75,7 +75,7 @@ a{
 
 #scanner-border {
     border-radius: 30px;
-    background-color: #000;
+    background-color: #005cff;
     width: auto;
     color: white;
     width: 90%;
@@ -341,9 +341,15 @@ a{
 
 /* INCIA SCANNER */
 
-/* INICIA PRIMERA PARTE SCANNER */
+
 .container-texto-principal-scanner {
-    padding-top: 4%;
+    padding-top: 5%;
+    padding-bottom: 1%;
+}
+
+.container-textos-scanner {
+    padding-top: 5%;
+    padding-bottom: 1%;
 }
 
 .full-chart-scanner {
@@ -351,101 +357,65 @@ a{
     width: 100%;
     padding: 0;
 }
-/* TERMINA PRIMERA PARTE SCANNER */
 
-
-/* INICIA SEGUNDA PARTE SCANNER */
-.text-resumen-macroeconomico {
-    padding-top: 4%;
+.smart-tape-scanner {
+    margin-top: 3%;
 }
 
-.container-widget-left-market {
-    margin-top: 2%;
-    margin-bottom: 2%;
+.tipos-de-cambio-col {
     height: 40rem;
-    padding: 0;
-}
-
-.wlm {
-    height: auto;
     width: 100%;
-}
-
-.widget-left-market {
-    height: 40rem;
     padding-left: 0;
 }
 
-.widget-right-market {
-    padding: 0;
-    height: 25rem;
-    width: 100%;
-}
-
-.widget-right-bottom-market {
-    height: 15rem;
-    width: 100%;
-    padding: 0;
-    padding-top: 15px;
-}
-/* TERMINA SEGUNDA PARTE SCANNER */
-
-
-/* INICIA TERCERA PARTE SCANNER */
-
-.container-tercera-parte-scanner {
+.calendario-economico-col {
     height: 40rem;
     width: 100%;
-    padding: 0;
-}
-
-.tipos-cruzados-text {
-    padding-top: 2%;
+    padding-right: 0;
 }
 
 
-/* TERMINA TERCERA PARTE SCANNER */
 
 
-/* INICIA CUARTA PARTE SCANNER */
-
-.container-cuarta-parte-scanner {
-    width: 100%;
-    height: 40rem;
-    background-color: red;
-    width: 100%;
-}
-
-/* TERMINA CUARTA PARTE SCANNER */
-
-
-
-/* MEDIA SCANNER */
+/* MEDIA QUERIES SCANNER */
 
 @media (max-width: 768px) {
 
+    #logo-header {
+        width: 50%;
+    }
+
+    #logo-header img {
+        width: 100%;
+        height: auto;
+    }
+
     .container-texto-principal-scanner {
-        padding-top: 25%;
+        padding-top: 5rem;
     }
 
-    .container-tercera-parte-scanner {
-        height: 40rem;
+    .full-chart-scanner{
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
 
-    .tipos-cruzados-text {
-        margin-top: 45rem;
+    #col-derecha-scanner {
+        height: 100rem;
+    }
+
+    .tipos-de-cambio-col {
+        padding: 0;
+    }
+    
+    .calendario-economico-col {
         padding: 0;
     }
 
-    .widget-left-market {
-        height: 40rem;
-        padding: 0;
-        margin-bottom: 3%;
+    .container-segunda-parte-scanner {
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
-
 }
-
-
 
 /* CONTACTO */
 
@@ -551,34 +521,6 @@ a{
 
 }
 /* MEDIA QUERIES HOME TERMINA */
-
-
-/* MEDIA QUERIES SCANNER INICIA*/
-
-@media (max-width: 768px) {
-
-    .container-texto-principal-scanner {
-        padding-top: 25%;
-    }
-
-    .container-tercera-parte-scanner {
-        height: 40rem;
-    }
-
-    .tipos-cruzados-text {
-        margin-top: 45rem;
-        padding: 0;
-    }
-
-    .widget-left-market {
-        height: 40rem;
-        padding: 0;
-        margin-bottom: 3%;
-    }
-
-}
-/* MEDIA QUERIES SCANNER TERMINA */
-
 
 /* MEDIA QUERIES CONTACTO INICIA */
 

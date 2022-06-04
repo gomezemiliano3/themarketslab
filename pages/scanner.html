@@ -21,7 +21,7 @@
         <div class="container-fluid" id="container-nav">
             <nav class="navbar navbar-expand-md">
                 <!-- Brand -->
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="#" id="logo-header">
                     <img src="/pictures/logo-black.png" alt="" height="40">
                 </a>
 
@@ -92,15 +92,21 @@
 
 
     <!-- SEGUNDA PARTE SCANNER -->
-    <div class="container text-center text-resumen-macroeconomico">
-        <h2>Resumen <span class="text-muted">Macroeconómico.</span> </h2>
-        <p><span class="text-muted">Observa los mercados desde una perspectiva macroeconómica.</span></p>
+
+
+    <div class="container container-textos-scanner text-center">
+        <h2 class="texto-principal-scanner">
+            Resumen de mercado <span class="text-muted">y Análisis técnico.</span>
+        </h2>
+        <p><span class="text-muted"> Observe un símbolo concreto desde la perspectiva del análisis técnico con una
+                muestra de valoraciones sencilla de visualizar.</span></p>
     </div>
 
-    <div class="container container-widget-left-market">
+    <div class="container container-segunda-parte-scanner" style="padding: 0;">
+        <div class="row h-100 w-100 row-segunda-parte-scanner">
 
-        <div class="row wlm">
-            <div class="col-12 col-md-6 col-sm-12 widget-left-market">
+            <!-- COLUMNA IZQUIERDA -->
+            <div class="col-12 col-sm-6" style="padding:0; height: 800px;">
                 <!-- TradingView Widget BEGIN -->
                 <div class="tradingview-widget-container">
                     <div class="tradingview-widget-container__widget"></div>
@@ -117,9 +123,9 @@
                             "isTransparent": false,
                             "showSymbolLogo": true,
                             "showFloatingTooltip": true,
-                            "plotLineColorGrowing": "rgba(41, 98, 255, 1)",
+                            "plotLineColorGrowing": "rgba(0, 0, 255, 1)",
                             "plotLineColorFalling": "rgba(41, 98, 255, 1)",
-                            "gridLineColor": "rgba(0, 0, 0, 0.65)",
+                            "gridLineColor": "rgba(42, 46, 57, 0)",
                             "scaleFontColor": "rgba(120, 123, 134, 1)",
                             "belowLineFillColorGrowing": "rgba(41, 98, 255, 0.12)",
                             "belowLineFillColorFalling": "rgba(41, 98, 255, 0.12)",
@@ -127,6 +133,51 @@
                             "belowLineFillColorFallingBottom": "rgba(41, 98, 255, 0)",
                             "symbolActiveColor": "rgba(41, 98, 255, 0.12)",
                             "tabs": [{
+                                    "title": "Índices",
+                                    "symbols": [{
+                                            "s": "FOREXCOM:SPXUSD",
+                                            "d": "S&P 500"
+                                        },
+                                        {
+                                            "s": "FOREXCOM:NSXUSD",
+                                            "d": "US 100"
+                                        },
+                                        {
+                                            "s": "FOREXCOM:DJI",
+                                            "d": "Dow 30"
+                                        },
+                                        {
+                                            "s": "INDEX:NKY",
+                                            "d": "Nikkei 225"
+                                        },
+                                        {
+                                            "s": "INDEX:DEU40",
+                                            "d": "DAX Index"
+                                        },
+                                        {
+                                            "s": "FOREXCOM:UKXGBP",
+                                            "d": "UK 100"
+                                        },
+                                        {
+                                            "s": "NASDAQ:NDX",
+                                            "d": "Nasdaq 100"
+                                        },
+                                        {
+                                            "s": "CAPITALCOM:US100",
+                                            "d": "US 100"
+                                        },
+                                        {
+                                            "s": "CAPITALCOM:US30",
+                                            "d": "US 30"
+                                        },
+                                        {
+                                            "s": "OANDA:DE30EUR",
+                                            "d": "GERMANY 30"
+                                        }
+                                    ],
+                                    "originalTitle": "Indices"
+                                },
+                                {
                                     "title": "Futuros",
                                     "symbols": [{
                                             "s": "CME_MINI:ES1!",
@@ -153,12 +204,16 @@
                                             "d": "Corn"
                                         },
                                         {
-                                            "s": "MCX:CRUDEOIL1!",
-                                            "d": "Crude Oil Futures"
+                                            "s": "EUREX:FDAX1!",
+                                            "d": "DAX Futures"
                                         },
                                         {
                                             "s": "COMEX:GC1!",
-                                            "d": "Gold Futures"
+                                            "d": "Gold"
+                                        },
+                                        {
+                                            "s": "MCX:SILVER1!",
+                                            "d": "Silver"
                                         }
                                     ],
                                     "originalTitle": "Futures"
@@ -217,18 +272,6 @@
                                         {
                                             "s": "FX:USDCAD",
                                             "d": "USD/CAD"
-                                        },
-                                        {
-                                            "s": "FX:EURGBP",
-                                            "d": "EUR/GBP"
-                                        },
-                                        {
-                                            "s": "FX:EURAUD",
-                                            "d": "EUR/AUD"
-                                        },
-                                        {
-                                            "s": "FX:EURNZD",
-                                            "d": "EUR/NZD"
                                         }
                                     ],
                                     "originalTitle": "Forex"
@@ -240,95 +283,214 @@
                 <!-- TradingView Widget END -->
             </div>
 
-            <div class="col-12 col-md-6 widget-right-market">
-                <!-- TradingView Widget BEGIN -->
-                <div class="tradingview-widget-container">
-                    <div class="tradingview-widget-container__widget"></div>
-                    <script type="text/javascript"
-                        src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
-                        {
-                            "interval": "1m",
-                            "width": "100%",
-                            "isTransparent": false,
-                            "height": "100%",
-                            "symbol": "NASDAQ:AAPL",
-                            "showIntervalTabs": true,
-                            "locale": "es",
-                            "colorTheme": "light"
-                        }
-                    </script>
-                </div>
-                <!-- TradingView Widget END -->
 
-                <div class="col-12 col-md-12 col-sm-12 widget-right-bottom-market">
-                    <!-- TradingView Widget BEGIN -->
-                    <div class="tradingview-widget-container">
-                        <div class="tradingview-widget-container__widget"></div>
-                        <script type="text/javascript"
-                            src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js"
-                            async>
-                            {
-                                "symbol": "NASDAQ:AAPL",
-                                "width": "100%",
-                                "height": "100%",
-                                "locale": "es",
-                                "dateRange": "12M",
-                                "colorTheme": "light",
-                                "trendLineColor": "rgba(41, 98, 255, 1)",
-                                "underLineColor": "rgba(41, 98, 255, 0.3)",
-                                "underLineBottomColor": "rgba(41, 98, 255, 0)",
-                                "isTransparent": false,
-                                "autosize": true,
-                                "largeChartUrl": ""
-                            }
-                        </script>
+            <!-- COLUMNA DERECHA -->
+            <div class="col-12 col-sm-6" id="col-derecha-scanner" style="padding:0; height: 800px;">
+
+                <div class="row row-parte-derecha-scanner" id="col-derecha-scanner" style="height:800px ;">
+
+                    <div class="col-sm-12" style="padding: 0; height: 450px;" id="col-derecha-arriba">
+                        <!-- TradingView Widget BEGIN -->
+                        <div class="tradingview-widget-container">
+                            <div class="tradingview-widget-container__widget"></div>
+                            <script type="text/javascript"
+                                src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js"
+                                async>
+                                {
+                                    "interval": "1m",
+                                    "width": "100%",
+                                    "isTransparent": false,
+                                    "height": "100%",
+                                    "symbol": "NASDAQ:AAPL",
+                                    "showIntervalTabs": true,
+                                    "locale": "es",
+                                    "colorTheme": "light"
+                                }
+                            </script>
+                        </div>
+                        <!-- TradingView Widget END -->
                     </div>
-                    <!-- TradingView Widget END -->
+
+
+                    <div class="col-sm-12" style="padding: 0; height: 350px;" id="col-derecha-abajo">
+                        <!-- TradingView Widget BEGIN -->
+                        <div class="tradingview-widget-container">
+                            <div class="tradingview-widget-container__widget"></div>
+                            <script type="text/javascript"
+                                src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js"
+                                async>
+                                {
+                                    "symbol": "FX:EURUSD",
+                                    "width": "100%",
+                                    "height": "100%",
+                                    "locale": "es",
+                                    "dateRange": "12M",
+                                    "colorTheme": "light",
+                                    "trendLineColor": "rgba(41, 98, 255, 1)",
+                                    "underLineColor": "rgba(41, 98, 255, 0.3)",
+                                    "underLineBottomColor": "rgba(41, 98, 255, 0)",
+                                    "isTransparent": false,
+                                    "autosize": true,
+                                    "largeChartUrl": ""
+                                }
+                            </script>
+                        </div>
+                        <!-- TradingView Widget END -->
+                    </div>
                 </div>
             </div>
-
         </div>
-
     </div>
+
     <!-- TERMINA SEGUNDA PARTE SCANNER -->
 
     <!-- TERCERA PARTE SCANNER -->
 
-    <div class="container text-center tipos-cruzados-text">
-        <h2>Tipos Cruzados <span class="text-muted"> en los Mercados de Divisas.</span></h2>
-        <p><span class="text-muted">Vé las cotizaciones en tiempo real de las divisas seleccionadas y compararlas con
-                otras divisas importantes.</span></p>
-    </div>
-
-
-    <div class="container container-tercera-parte-scanner">
+    <div class="container smart-tape-scanner" style="padding:0 ;">
         <!-- TradingView Widget BEGIN -->
         <div class="tradingview-widget-container">
             <div class="tradingview-widget-container__widget"></div>
             <script type="text/javascript"
-                src="https://s3.tradingview.com/external-embedding/embed-widget-forex-cross-rates.js" async>
+                src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
                 {
-                    "width": "100%",
-                    "height": "100%",
-                    "currencies": [
-                        "EUR",
-                        "USD",
-                        "JPY",
-                        "GBP",
-                        "CHF",
-                        "AUD",
-                        "CAD",
-                        "NZD",
-                        "CNY"
+                    "symbols": [{
+                            "proName": "FOREXCOM:SPXUSD",
+                            "title": "S&P 500"
+                        },
+                        {
+                            "proName": "FOREXCOM:NSXUSD",
+                            "title": "US 100"
+                        },
+                        {
+                            "proName": "FX_IDC:EURUSD",
+                            "title": "EUR/USD"
+                        },
+                        {
+                            "proName": "BITSTAMP:BTCUSD",
+                            "title": "Bitcoin"
+                        },
+                        {
+                            "proName": "BITSTAMP:ETHUSD",
+                            "title": "Ethereum"
+                        }
                     ],
-                    "isTransparent": false,
+                    "showSymbolLogo": true,
                     "colorTheme": "light",
+                    "isTransparent": false,
+                    "displayMode": "adaptive",
                     "locale": "es"
                 }
             </script>
         </div>
         <!-- TradingView Widget END -->
     </div>
+
+
+    <!-- CUARTA PARTE SCANNER -->
+
+    <div class="container container-textos-scanner text-center">
+        <h2 class="texto-principal-scanner">
+            Tipos Cruzados de Divisas <span class="text-muted">y Calendario Económico</span>
+        </h2>
+        <p><span class="text-muted"> Vé las cotizaciones en tiempo real de las divisas seleccionadas, compararlas con
+                otras divisas importantes y vé las últimas noticias.</span></p>
+    </div>
+
+    <div class="container" style="padding:0 ;">
+        <div class="row">
+            <div class="col-12 col-sm-8 tipos-de-cambio-col">
+                <!-- TradingView Widget BEGIN -->
+                <div class="tradingview-widget-container">
+                    <div class="tradingview-widget-container__widget"></div>
+                    <script type="text/javascript"
+                        src="https://s3.tradingview.com/external-embedding/embed-widget-forex-cross-rates.js" async>
+                        {
+                            "width": "100%",
+                            "height": "100%",
+                            "currencies": [
+                                "EUR",
+                                "USD",
+                                "JPY",
+                                "GBP",
+                                "CHF",
+                                "AUD",
+                                "CAD",
+                                "NZD",
+                                "CNY"
+                            ],
+                            "isTransparent": false,
+                            "colorTheme": "light",
+                            "locale": "es"
+                        }
+                    </script>
+                </div>
+                <!-- TradingView Widget END -->
+            </div>
+
+            <div class="col-12 col-sm-4 calendario-economico-col">
+                <!-- TradingView Widget BEGIN -->
+                <div class="tradingview-widget-container">
+                    <div class="tradingview-widget-container__widget"></div>
+                    <script type="text/javascript"
+                        src="https://s3.tradingview.com/external-embedding/embed-widget-events.js" async>
+                        {
+                            "width": "100%",
+                            "height": "100%",
+                            "colorTheme": "light",
+                            "isTransparent": false,
+                            "locale": "es",
+                            "importanceFilter": "0,1"
+                        }
+                    </script>
+                </div>
+                <!-- TradingView Widget END -->
+            </div>
+        </div>
+    </div>
+
+    <!-- QUINTA PARTE SCANNER -->
+    <div class="container container-textos-scanner text-center">
+        <h2 class="texto-principal-scanner">
+            Mapa de calor de forex
+        </h2>
+        <p><span class="text-muted"> Muestra una imagen que le mantendrá al tanto de lo que ocurre en el mercado de
+                divisas: este widget le permite identificar las divisas fuertes y débiles, además de ver cómo se
+                relacionan entre sí, todo ello en tiempo real.
+            </span></p>
+    </div>
+
+
+    <div class="container" style="padding:0; height: 40rem;">
+        <div class="row h-100">
+            <!-- TradingView Widget BEGIN -->
+            <div class="tradingview-widget-container">
+                <div class="tradingview-widget-container__widget"></div>
+                <script type="text/javascript"
+                    src="https://s3.tradingview.com/external-embedding/embed-widget-forex-heat-map.js" async>
+                    {
+                        "width": "100%",
+                        "height": "100%",
+                        "currencies": [
+                            "EUR",
+                            "USD",
+                            "JPY",
+                            "GBP",
+                            "CHF",
+                            "AUD",
+                            "CAD",
+                            "NZD",
+                            "CNY"
+                        ],
+                        "isTransparent": false,
+                        "colorTheme": "light",
+                        "locale": "es"
+                    }
+                </script>
+            </div>
+            <!-- TradingView Widget END -->
+        </div>
+    </div>
+
 
     <!-- FOOTER -->
 
@@ -439,9 +601,9 @@
     </footer>
     <!-- Footer -->
 
-        <!-- SCRIPTS BOOTSTRAP -->
+    <!-- SCRIPTS BOOTSTRAP -->
 
-        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
     </script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
