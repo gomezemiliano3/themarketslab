@@ -1,0 +1,225 @@
+/* MEDIA QUERIES HOME INICIA */
+/*  */
+/*  */
+
+@media (max-width: 768px) {
+
+    #container-nav {
+        width: 100%;
+        margin: 0;
+        position: absolute;
+    }
+
+    .container-principal-home {
+        padding: 0;
+        display: flex;
+        height: fit-content;
+        align-items: center;
+        justify-content: center;
+        padding-top: 100px;
+    }
+
+    .texto-principal {
+        font-size: 4rem;
+        width: 80%;
+    }
+
+    .home-image {
+        width: 200px;
+    }
+
+    .home-image img {
+        width: 50%;
+        margin-bottom: 50px;
+    }
+
+    .row-1-home {
+        display: flex;
+        align-items: center;
+    }
+
+    .subtexto-principal-home {
+        width: 100%;
+    }
+
+    // SEGUNDA PARTE
+
+    #col-der-tercera-parte-home h2 {
+        margin-right: 0;
+        margin-left: 10%;
+        width: 90%;
+        text-align: left;
+    }
+
+    #col-der-tercera-parte-home p {
+        text-align: left;
+        margin-right: 0;
+        margin-left: 10%;
+        width: 90%;
+    }
+
+    .container-tercera-parte-home {
+        margin-top: 15%;
+    }
+
+    .buttons-tercera-parte-home {
+        justify-content: left;
+        margin-left: 10%;
+    }
+
+    #button-2-tercera-parte-home {
+        margin-right: 2rem;
+    }
+
+}
+
+/* MEDIA QUERIES HOME TERMINA */
+
+
+/* DISCLAIMER INICIA */
+
+.contenedor-disclaimer {
+    margin: 10%;
+}
+
+/* DISCLAIMER TERMINA */
+
+/* MEDIA QUERIES SCANNER */
+
+@media (max-width: 768px) {
+
+    #logo-header {
+        width: 50%;
+    }
+
+    #logo-header img {
+        width: 100%;
+        height: auto;
+    }
+
+    .container-texto-principal-scanner {
+        padding-top: 5rem;
+    }
+
+    .full-chart-scanner {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    #col-derecha-scanner {
+        height: 100rem;
+    }
+
+    .tipos-de-cambio-col {
+        padding: 0;
+    }
+
+    .calendario-economico-col {
+        padding: 0;
+    }
+
+    .container-segunda-parte-scanner {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+// MEDIA QUERIES SCANNER TERMINA
+
+/* MEDIA QUERIES CONTACTO INICIA */
+
+@media (max-width: 768px) {
+    #contacto {
+        padding-top: 5rem;
+    }
+}
+
+/* MEDIA QUERIES CONTACTO TERMINA */
+
+
+// MEDIA QUERIES CURSOS INICIA
+
+@media (max-width: 768px) {
+    .container-principal-cursos {
+        padding-top: 20%;
+
+        .row {
+            .col1 {
+                margin-top: 50px;
+                h2 {
+                    font-size: 3rem;
+                }
+            }
+        }
+    }
+
+    .container-segunda-parte-cursos {
+        height: auto;
+
+        .row {
+
+            .col1 {
+                justify-content: center;
+                padding: 20px;
+
+                img {
+                    width: 10%;
+                }
+            }
+
+            .col2 {
+                hr {
+                    height: 1px;
+                    width: 70%;
+                    color: $color4;
+                }
+            }
+
+            .col3 {
+                justify-content: center;
+                text-align: center;
+
+                p {
+                    font-size: 30px;
+                    width: 70%;
+                }
+            }
+        }
+    }
+
+    .container-tercera-parte-cursos {
+        height: auto;
+        margin-top: 50px;
+        margin-bottom: 100px;
+
+        .row {
+            height: auto;
+
+            .col-cursos {
+
+                .container {
+                    width: 90%;
+                    margin-top: 50px;
+                }
+            }
+        }
+    }
+
+    .container-cuarta-parte-cursos {
+        width: 85%;
+
+        p {
+            font-size: 30px;
+        }
+    }
+
+    .reseñas-cursos {
+        height: auto;
+        
+        .row {
+            height: auto;
+        }
+    }
+}
+
+// MEDIA QUERIES CURSOS TERMINA
