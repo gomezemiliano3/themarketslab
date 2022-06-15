@@ -1,0 +1,29 @@
+PROYECTO SASS + SEO
+
+
+Aspectos que agregué:
+
+-Creé un nuevo HTML (CURSOS) desde 0 y tambien el diseño responsive.
+
+
+-Agregué un mapa para los headings (linea 21)
+
+-Agregué un mapa para los colores.
+
+-Añadí un Mixin para los row, col, container-fluid y nav-link.
+
+
+-Aplique SEO en las descripciones de todos los html (en la descripcion)
+además incluí descripción en todas las imagenes de mi página
+(alt)
+
+-Implementé los cambios que me sugeriste en la entrega anterior,
+dividiendo las secciones de las media queries y el html de cursos,
+que era uno de los más extensos, en distintos scss y los importe a
+lo último de mi archivo principal de .scss
+
+-Trabajé un poco más en la estética general y la estructura de la página,
+implemente una nueva paleta de colores y añadí algunas imagenes nuevas.
+
+-Corregí los linkeos en el html de Scanner, ahora se puede ver como se
+debería.
