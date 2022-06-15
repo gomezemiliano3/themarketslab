@@ -584,7 +584,7 @@ footer {
   background-color: red;
   height: auto;
   margin: 50px 0 50px 0;
-  background-image: url(/pictures/cursos2.png);
+  background-image: url(../pictures/cursos2.png);
 }
 
 .container-segunda-parte-cursos .row {
