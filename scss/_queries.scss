@@ -4,71 +4,99 @@
 
 @media (max-width: 768px) {
 
-    #container-nav {
-        width: 100%;
-        margin: 0;
-        position: absolute;
+    .container-primera-parte-home {
+
+        .row {
+            .col-1-primera-parte {
+                margin-top: 15%;
+
+                h1 {
+                    font-size: 4rem;
+                }
+
+                p {
+                    width: 80%;
+                }
+            }
+        }
     }
 
-    .container-principal-home {
-        padding: 0;
-        display: flex;
-        height: fit-content;
-        align-items: center;
-        justify-content: center;
-        padding-top: 100px;
+    // SEGUNDA PARTE HOME
+
+    .container-segunda-parte-home {
+        .row {
+            .col-1-segunda-parte-home {
+                h2 {
+                    font-size: 2rem;
+                }
+
+                p {
+                    width: 80%;
+                }
+
+                .buttons-col-1-segunda-parte-home {
+                    button {
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+
+            .col-2-segunda-parte-home {
+                img {
+                    width: 80%;
+                    margin-top: 1rem;
+                }
+            }
+
+        }
     }
 
-    .texto-principal {
-        font-size: 4rem;
-        width: 80%;
+    .container-segunda-parte-2-home {
+        margin-top: 5rem;
+
+        .row {
+            #col-4-segunda-parte-2-home {
+                h2 {
+                    font-size: 2rem;
+                }
+
+                p {
+                    width: 80%;
+                }
+
+                .buttons-tercera-parte-home {
+                    button {
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+
+            .col-3-segunda-parte-home {
+                img {
+                    width: 80%;
+                    margin-top: 1rem;
+                }
+            }
+        }
     }
 
-    .home-image {
-        width: 200px;
-    }
+    .contenedor-tercera-parte-home {
+        margin-top: 5rem;
+        .row {
 
-    .home-image img {
-        width: 50%;
-        margin-bottom: 50px;
-    }
+            .col-1-tercera-parte-home {
 
-    .row-1-home {
-        display: flex;
-        align-items: center;
-    }
+                h2 {
+                    font-size: 2rem;
+                }
+            }
 
-    .subtexto-principal-home {
-        width: 100%;
-    }
-
-    // SEGUNDA PARTE
-
-    #col-der-tercera-parte-home h2 {
-        margin-right: 0;
-        margin-left: 10%;
-        width: 90%;
-        text-align: left;
-    }
-
-    #col-der-tercera-parte-home p {
-        text-align: left;
-        margin-right: 0;
-        margin-left: 10%;
-        width: 90%;
-    }
-
-    .container-tercera-parte-home {
-        margin-top: 15%;
-    }
-
-    .buttons-tercera-parte-home {
-        justify-content: left;
-        margin-left: 10%;
-    }
-
-    #button-2-tercera-parte-home {
-        margin-right: 2rem;
+            .col-3-tercera-parte-home {
+                p {
+                    width: 80%;
+                }
+            }
+        }
     }
 
 }
@@ -138,6 +166,26 @@
 
 
 // MEDIA QUERIES CURSOS INICIA
+@media (max-width: 1300px) {
+    .container-tercera-parte-cursos {
+        height: 130vh;
+    }
+} 
+
+
+
+@media (max-width: 992px) {
+
+    .container-tercera-parte-cursos {
+        height: auto;
+
+        .row {
+            .col-cursos {
+                margin-bottom:50px;
+            }
+        }
+    }
+}
 
 @media (max-width: 768px) {
     .container-principal-cursos {
@@ -146,6 +194,7 @@
         .row {
             .col1 {
                 margin-top: 50px;
+
                 h2 {
                     font-size: 3rem;
                 }
@@ -215,7 +264,7 @@
 
     .reseñas-cursos {
         height: auto;
-        
+
         .row {
             height: auto;
         }

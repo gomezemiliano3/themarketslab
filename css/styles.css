@@ -157,12 +157,11 @@ a {
 /*  */
 /* FOOTER INICIA */
 footer {
-  background-color: #9d9d9d;
+  background-color: #000;
 }
 
-.container-footer {
-  margin: 0;
-  padding: 0;
+footer p {
+  color: white;
 }
 
 /* FOOTER TERMINA */
@@ -324,6 +323,15 @@ footer {
   word-spacing: 2rem;
 }
 
+.container-segunda-parte-home .row-segunda-parte-home .col-1-segunda-parte-home .buttons-col-1-segunda-parte-home button {
+  background-color: #fff;
+  border: 1px solid #000;
+}
+
+.container-segunda-parte-home .row-segunda-parte-home .col-1-segunda-parte-home .buttons-col-1-segunda-parte-home button a {
+  color: #000;
+}
+
 .container-segunda-parte-home .row-segunda-parte-home .col-2-segunda-parte-home {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -343,15 +351,6 @@ footer {
   height: auto;
   margin-top: 10%;
   margin-bottom: 10%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .container-segunda-parte-2-home .row-segunda-parte-2-home {
@@ -364,6 +363,28 @@ footer {
           align-items: center;
 }
 
+.container-segunda-parte-2-home .row-segunda-parte-2-home #col-4-segunda-parte-2-home h2 {
+  margin-left: 10%;
+}
+
+.container-segunda-parte-2-home .row-segunda-parte-2-home #col-4-segunda-parte-2-home p {
+  margin-left: 10%;
+}
+
+.container-segunda-parte-2-home .row-segunda-parte-2-home #col-4-segunda-parte-2-home .buttons-tercera-parte-home {
+  margin-left: 10%;
+  word-spacing: 2rem;
+}
+
+.container-segunda-parte-2-home .row-segunda-parte-2-home #col-4-segunda-parte-2-home .buttons-tercera-parte-home button {
+  background-color: #fff;
+  border: 1px solid #000;
+}
+
+.container-segunda-parte-2-home .row-segunda-parte-2-home #col-4-segunda-parte-2-home .buttons-tercera-parte-home button a {
+  color: #000;
+}
+
 .container-segunda-parte-2-home .row-segunda-parte-2-home .col-3-segunda-parte-home {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -374,30 +395,6 @@ footer {
 .container-segunda-parte-2-home .row-segunda-parte-2-home .col-3-segunda-parte-home img {
   width: 70%;
   margin: 0 auto;
-}
-
-.container-segunda-parte-2-home .row-segunda-parte-2-home .col-4-segunda-parte-2-home h2 {
-  margin-right: 10%;
-  text-align: right;
-}
-
-.container-segunda-parte-2-home .row-segunda-parte-2-home .col-4-segunda-parte-2-home p {
-  text-align: right;
-  margin-right: 10%;
-}
-
-.container-segunda-parte-2-home .row-segunda-parte-2-home .col-4-segunda-parte-2-home .buttons-tercera-parte-home {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right;
-  margin-right: 10%;
-}
-
-.container-segunda-parte-2-home .row-segunda-parte-2-home .col-4-segunda-parte-2-home #button-2-tercera-parte-home {
-  margin-right: 2rem;
 }
 
 /* SEGUNDA PARTE HOME TERMINA */
@@ -584,7 +581,7 @@ footer {
   background-color: red;
   height: auto;
   margin: 50px 0 50px 0;
-  background-image: url(/pictures/cursos2.png);
+  background-image: url(../pictures/cursos2.png);
 }
 
 .container-segunda-parte-cursos .row {
@@ -648,6 +645,8 @@ footer {
 .container-tercera-parte-cursos {
   width: 100%;
   height: 100vh;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
 }
 
 .container-tercera-parte-cursos .row {
@@ -1012,72 +1011,52 @@ footer {
 /*  */
 /*  */
 @media (max-width: 768px) {
-  #container-nav {
-    width: 100%;
-    margin: 0;
-    position: absolute;
-  }
-  .container-principal-home {
-    padding: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    padding-top: 100px;
-  }
-  .texto-principal {
-    font-size: 4rem;
-    width: 80%;
-  }
-  .home-image {
-    width: 200px;
-  }
-  .home-image img {
-    width: 50%;
-    margin-bottom: 50px;
-  }
-  .row-1-home {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .subtexto-principal-home {
-    width: 100%;
-  }
-  #col-der-tercera-parte-home h2 {
-    margin-right: 0;
-    margin-left: 10%;
-    width: 90%;
-    text-align: left;
-  }
-  #col-der-tercera-parte-home p {
-    text-align: left;
-    margin-right: 0;
-    margin-left: 10%;
-    width: 90%;
-  }
-  .container-tercera-parte-home {
+  .container-primera-parte-home .row .col-1-primera-parte {
     margin-top: 15%;
   }
-  .buttons-tercera-parte-home {
-    -webkit-box-pack: left;
-        -ms-flex-pack: left;
-            justify-content: left;
-    margin-left: 10%;
+  .container-primera-parte-home .row .col-1-primera-parte h1 {
+    font-size: 4rem;
   }
-  #button-2-tercera-parte-home {
-    margin-right: 2rem;
+  .container-primera-parte-home .row .col-1-primera-parte p {
+    width: 80%;
+  }
+  .container-segunda-parte-home .row .col-1-segunda-parte-home h2 {
+    font-size: 2rem;
+  }
+  .container-segunda-parte-home .row .col-1-segunda-parte-home p {
+    width: 80%;
+  }
+  .container-segunda-parte-home .row .col-1-segunda-parte-home .buttons-col-1-segunda-parte-home button {
+    margin-bottom: 20px;
+  }
+  .container-segunda-parte-home .row .col-2-segunda-parte-home img {
+    width: 80%;
+    margin-top: 1rem;
+  }
+  .container-segunda-parte-2-home {
+    margin-top: 5rem;
+  }
+  .container-segunda-parte-2-home .row #col-4-segunda-parte-2-home h2 {
+    font-size: 2rem;
+  }
+  .container-segunda-parte-2-home .row #col-4-segunda-parte-2-home p {
+    width: 80%;
+  }
+  .container-segunda-parte-2-home .row #col-4-segunda-parte-2-home .buttons-tercera-parte-home button {
+    margin-bottom: 20px;
+  }
+  .container-segunda-parte-2-home .row .col-3-segunda-parte-home img {
+    width: 80%;
+    margin-top: 1rem;
+  }
+  .contenedor-tercera-parte-home {
+    margin-top: 5rem;
+  }
+  .contenedor-tercera-parte-home .row .col-1-tercera-parte-home h2 {
+    font-size: 2rem;
+  }
+  .contenedor-tercera-parte-home .row .col-3-tercera-parte-home p {
+    width: 80%;
   }
 }
 
@@ -1127,6 +1106,21 @@ footer {
 }
 
 /* MEDIA QUERIES CONTACTO TERMINA */
+@media (max-width: 1300px) {
+  .container-tercera-parte-cursos {
+    height: 130vh;
+  }
+}
+
+@media (max-width: 992px) {
+  .container-tercera-parte-cursos {
+    height: auto;
+  }
+  .container-tercera-parte-cursos .row .col-cursos {
+    margin-bottom: 50px;
+  }
+}
+
 @media (max-width: 768px) {
   .container-principal-cursos {
     padding-top: 20%;
