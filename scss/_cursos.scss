@@ -1,6 +1,6 @@
-// INICIA CURSOS
+// // INICIA CURSOS // //
 
-// PRIMERA PARTE CURSOS
+// // PRIMERA PARTE CURSOS
 
 .container-principal-cursos {
     padding: 0;
@@ -59,14 +59,17 @@
     }
 
     p {
+        color: #000;
         margin: 0;
         font-size: 20px;
     }
 }
 
-// TERMINA PRIMERA PARTE CURSOS
+// // TERMINA PRIMERA PARTE CURSOS
 
-// INICIA SEGUNDA PARTE CURSOS
+//
+
+// // INICIA SEGUNDA PARTE CURSOS
 
 .container-segunda-parte-cursos {
     background-color: red;
@@ -115,9 +118,11 @@
     }
 }
 
-// TERMINA SEGUNDA PARTE CURSOS
+// // TERMINA SEGUNDA PARTE CURSOS
 
-// INICIA TERCERA PARTE CURSOS
+// 
+
+// // INICIA TERCERA PARTE CURSOS
 
 .container-tercera-parte-cursos {
     width: 100%;
@@ -212,8 +217,16 @@
                         justify-content: center;
 
                         button {
-                            width: 60%;
+                            width: 80%;
                             height: 70%;
+                            border-radius: 0;
+                            color: #000;
+                        }
+
+                        button:hover {
+                            background-color: #000;
+                            color: #fff;
+                            transition: 0.4s ease-in-out;
                         }
                     }
 
@@ -261,11 +274,16 @@
     }
 }
 
+// // TERMINA TERCERA PARTE CURSOS
+
+//
+
+// // INICIA CUARTA PARTE CURSOS
+
 .container-cuarta-parte-cursos {
     background: linear-gradient(-45deg, #22edbf, #85d285, #b4ef61, #124735);
     background-size: 400% 400%;
     animation: gradient 5s ease infinite;
-    height: 25rem;
     border-radius: 40px;
 
     p {
@@ -331,11 +349,17 @@
     }
 }
 
+// // TERMINA CUARTA PARTE CURSOS
+
+//
+
+// // INICIA QUINTA PARTE CURSOS
+
 .reseñas-cursos {
     background-image: url(/pictures/background-gradient-cursos.png);
     background-position: center;
     background-size: cover;
-    height: 100vh;
+    height: auto;
     width: 100%;
 
     .container {
@@ -380,89 +404,8 @@
     }
 }
 
-// MEDIA QUERIES CURSOS INICIA
+// // TERMINA QUINTA PARTE CURSOS
 
-@media (max-width: 768px) {
-    .container-principal-cursos {
-        padding-top: 20%;
+//
 
-        .row {
-            .col1 {
-                margin-top: 50px;
-                h2 {
-                    font-size: 3rem;
-                }
-            }
-        }
-    }
-
-    .container-segunda-parte-cursos {
-        height: auto;
-
-        .row {
-
-            .col1 {
-                justify-content: center;
-                padding: 20px;
-
-                img {
-                    width: 10%;
-                }
-            }
-
-            .col2 {
-                hr {
-                    height: 1px;
-                    width: 70%;
-                    color: $color4;
-                }
-            }
-
-            .col3 {
-                justify-content: center;
-                text-align: center;
-
-                p {
-                    font-size: 30px;
-                    width: 70%;
-                }
-            }
-        }
-    }
-
-    .container-tercera-parte-cursos {
-        height: auto;
-        margin-top: 50px;
-        margin-bottom: 100px;
-
-        .row {
-            height: auto;
-
-            .col-cursos {
-
-                .container {
-                    width: 90%;
-                    margin-top: 50px;
-                }
-            }
-        }
-    }
-
-    .container-cuarta-parte-cursos {
-        width: 85%;
-
-        p {
-            font-size: 30px;
-        }
-    }
-
-    .reseñas-cursos {
-        height: auto;
-        
-        .row {
-            height: auto;
-        }
-    }
-}
-
-// MEDIA QUERIES CURSOS TERMINA
+// // TERMINA CURSOS // //

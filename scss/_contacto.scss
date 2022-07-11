@@ -1,0 +1,128 @@
+// CONTACTO INICIA
+
+.formulario-contacto {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    form {
+
+        input {
+            border: 0;
+            border-bottom: 1px solid #DFE0E1;
+            border-radius: 0;
+        }
+
+        .form-check {
+            input {
+                position:relative;
+                margin: 0 1% 0 0;
+            }
+
+            label {
+                span {
+                    a {
+                        color:#000;
+                        text-decoration:underline;
+                    }
+                }
+            }
+        }
+
+        button {
+            background-color: #000;
+            border: 0;
+            border-radius: 0;
+            height: 3rem;
+            color: #fff;
+        }
+
+        button:hover {
+            background-color: #00FFB1;
+            color: #000;
+            transition: 0.4s ease-in-out;
+            border: 0;
+        }
+    }
+}
+
+#preguntas-frecuentes {
+    margin-top: 3rem;
+
+    .row {
+        .card {
+            border: 0;
+            border-bottom: 1px solid $color5;
+            margin: 40px;
+        
+            .card-header {
+                background-color: transparent;
+        
+                button {
+                    text-decoration: none;
+                    color: #000;
+                    font-size: 20px;
+                    box-shadow: none;
+                    font-weight: 500;
+                }
+                
+                i {
+                    font-size: 20px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        
+            .card-body {
+                background-color: #fff;
+                text-align: left;
+                color: #6b6b6b;
+        
+                i {
+                    margin-left: 10px;
+                    color: #00FFB1;
+                }
+            }
+        }
+    }
+}
+
+.avales {
+    margin-top: 5rem;
+    margin-bottom: -4rem;
+    padding: 5rem 0 5rem 0;
+    background-color: #000;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h3{
+        color: #fff;
+        margin-bottom: 2rem;
+
+        span {
+            font-weight: 300;
+        }
+    }
+
+    .container {
+        .row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .col {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                img {
+                    margin: 3rem 0 5rem 0;
+                    width: 70%;
+                    height: auto;
+                }
+            }
+        }
+    }
+}

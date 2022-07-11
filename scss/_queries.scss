@@ -2,6 +2,18 @@
 /*  */
 /*  */
 
+@media (max-width: 1110px) {
+    .container-primera-parte-home {
+        .row {
+            .col-1-primera-parte {
+                h1 {
+                    font-size: 5rem;
+                }
+            }
+        }
+    }
+}
+
 @media (max-width: 768px) {
 
     .container-primera-parte-home {
@@ -112,6 +124,8 @@
 
 /* DISCLAIMER TERMINA */
 
+//
+
 /* MEDIA QUERIES SCANNER */
 
 @media (max-width: 768px) {
@@ -154,6 +168,8 @@
 
 // MEDIA QUERIES SCANNER TERMINA
 
+//
+
 /* MEDIA QUERIES CONTACTO INICIA */
 
 @media (max-width: 768px) {
@@ -162,17 +178,17 @@
     }
 }
 
-/* MEDIA QUERIES CONTACTO TERMINA */
+//* MEDIA QUERIES CONTACTO TERMINA *
 
+//
 
 // MEDIA QUERIES CURSOS INICIA
+
 @media (max-width: 1300px) {
     .container-tercera-parte-cursos {
         height: 130vh;
     }
 } 
-
-
 
 @media (max-width: 992px) {
 
@@ -256,6 +272,7 @@
 
     .container-cuarta-parte-cursos {
         width: 85%;
+        height: auto;
 
         p {
             font-size: 30px;

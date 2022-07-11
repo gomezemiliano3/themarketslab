@@ -8,42 +8,52 @@
             integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
         <script src="https://kit.fontawesome.com/90bae21807.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="/css/normalize.css">
-        <link rel="stylesheet" href="../css/styles.css">
+        <link rel="stylesheet" href="../scss/styles.css">
         <title>TheMarketsLab - Disclaimer</title>
     </head>
 <body>
     <header>
         <div class="container-fluid" id="container-nav">
-            <nav class="navbar navbar-expand-md">
-                
-                <!-- Brand -->
-                <a class="navbar-brand" href="#">
-                    <img src="/pictures/logo-black.png" alt="" height="40">
-                </a>
 
-                <!-- Toggler/collapsibe Button -->
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                    <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
-                </button>
+            <div class="row">
 
-                <!-- Navbar links -->
-                <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="/index.html">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="cursos.html">Cursos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contacto.html">Contacto</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" id="scanner-border" href="scanner.html">Scanner</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+                <nav class="navbar navbar-expand-md">
+                    <div class="col-4">
+                        <!-- Brand -->
+                        <a class="navbar-brand" href="#">
+                            <img src="../pictures/logo-black.png" alt="logo themarketslab" height="40">
+                        </a>
+                    </div>
+                    
+
+                    <div class="col-8">
+                        <!-- Toggler/collapsibe Button -->
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#collapsibleNavbar">
+                            <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
+                        </button>
+
+
+                        <!-- Navbar links -->
+                        <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../index.html">Inicio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="cursos.html">Cursos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contacto.html">Contacto</a>
+                                </li>
+                                <li class="nav-item" id="scanner-nav">
+                                    <a class="nav-link" id="scanner-border" href="scanner.html">Scanner</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
         </div>
     </header>
 

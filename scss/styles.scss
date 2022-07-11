@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800&display=swap');
-
+@import "../css/bootstrap.min.css";
 $color1: #000;
 $color2: #00ffb1;
 $color3: #fff;
 $color4: #9d9d9d;
+$color5: #d7d7d7;
 
 body {
     margin: 0;
@@ -130,73 +131,6 @@ a {
     padding: 0;
 }
 
-
-
-/* HEADER INICIA */
-/*  */
-/*  */
-
-#container-nav {
-    padding: 0;
-    background-color: white;
-    position: fixed;
-    z-index: 3;
-}
-
-.nav-link {
-    @include nav-link
-}
-
-.navbar-nav {
-    margin: 0 auto;
-    width: 50%;
-}
-
-.navbar-links-container {
-    width: 100%;
-}
-
-.nav-item {
-    text-align: center;
-    width: 100%;
-}
-
-.navbar-collapse {
-    z-index: 2;
-    display: inline-block;
-}
-
-#scanner-border {
-    border-radius: 30px;
-    background-color: $color1;
-    width: auto;
-    color: $color3;
-    width: 90%;
-    margin: 0 auto;
-    font-weight: 300;
-}
-
-:hover#scanner-border {
-    background-color: $color3;
-    border: 1px solid $color1;
-    color: black;
-    transition: 0.4s;
-}
-
-.carrito-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.carrito {
-    font-size: 20px;
-}
-
-
-
-/* HEADER TERMINA */
-
 /*  */
 
 /* FOOTER INICIA */
@@ -208,6 +142,7 @@ footer {
 
     p {
         color: white;
+        font-size: 16px;
     }
 }
 
@@ -226,18 +161,23 @@ footer {
 
 .container-primera-parte-home {
     padding: 0;
+    height: fit-content;
 
     .row {
+
         padding: 0;
 
         .col-1-primera-parte {
+            height: auto;
             padding: 0;
             display: flex;
             flex-direction: column;
             justify-content: center;
             padding-left: 10%;
 
-
+            h1 {
+                margin: 4% 0 4% 0;
+            }
 
             span {
                 font-weight: 300;
@@ -246,7 +186,7 @@ footer {
             }
 
             p {
-                font-size: 20px;
+                font-size: 16px;
                 margin-bottom: 2rem;
             }
 
@@ -276,6 +216,7 @@ footer {
                     }
 
                     .col-9 {
+                        height: auto;
                         color: white;
                         display: flex;
                         justify-content: center;
@@ -288,8 +229,12 @@ footer {
                         }
                     }
                 }
-
             }
+            .button-inicio:active {
+                background-color: red;
+                transition: 0.1s;
+            }
+            
         }
 
         .button-inicio:hover {
@@ -298,12 +243,17 @@ footer {
         }
 
         .col-2-primera-parte {
+
             padding: 0;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
 
             img {
-                height: auto;
-                width: 100%;
+                width: 80%;
                 background-size: cover;
+
             }
         }
     }
@@ -314,8 +264,13 @@ footer {
 .widget-tradingview-home {
     margin-top: 2%;
     margin-bottom: 2%;
+    height: 250px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
 
 /* PRIMERA PARTE HOME TERMINA */
 
@@ -353,11 +308,28 @@ footer {
                 word-spacing: 2rem;
 
                 button {
-                    background-color: $color3;
-                    border: 1px solid $color1;
+                    background-color: #000;
+                    border: 0;
+                    border-radius: 0;
+                    height: 3rem;
 
                     a {
                         color: $color1;
+                        display: block;
+                        text-decoration: none;
+                        font-size: 16px;
+                        color: #fff;
+
+                    }
+                }
+
+                button:hover {
+                    background-color: #00FFB1;
+                    border: 0;
+                    transition: 0.4s ease-in-out;
+
+                    a {
+                        color: #000;
                     }
                 }
             }
@@ -404,11 +376,25 @@ footer {
                 word-spacing: 2rem;
 
                 button {
-                    background-color: $color3;
-                    border: 1px solid $color1;
+                    background-color: #000;
+                    border: 0;
+                    border-radius: 0;
+                    height: 3rem;
+                
+                    a {
+                        color: #fff;
+                        display: block;
+                        text-decoration: none;
+                        font-size: 16px;
+                    }
+                }
+
+                button:hover {
+                    background-color: #00ffb1;
+                    transition: 0.4s ease-in-out;
 
                     a {
-                        color: $color1;
+                        color: #000;
                     }
                 }
             }
@@ -464,6 +450,30 @@ footer {
             width: 70%;
         }
     }
+
+    #links-tercera-parte-home {
+        button {
+            width: 40%;
+            border-radius: 0;
+            background-color: #000;
+            border: 0;
+            height: 3rem;
+
+            a {color: #fff;
+                display: block;
+                text-decoration: none;
+            }
+        }
+
+        button:hover {
+            background-color: #00ffb1;
+            transition: 0.4s ease-in-out;
+
+            a {
+                color: #000;
+            }
+        }
+    }
 }
 
 
@@ -510,18 +520,15 @@ footer {
 
 /* CONTACTO */
 
-.contacto {
-    height: auto;
-    margin: 0 auto;
-    padding: 5%;
-}
 
 /* TERMINA CONTACTO */
 
-// IMPORT CURSOS
+// IMPORT //
+
+@import "../scss/header";
 
 @import "../scss/cursos";
 
-// IMPORT  MEDIA QUERIES
+@import "../scss/contacto";
 
 @import "../scss/queries";

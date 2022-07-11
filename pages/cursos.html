@@ -11,10 +11,11 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
         integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+        <link rel="icon" type="image/png" href="../pictures/iso-white.png">
 
     <script src="https://kit.fontawesome.com/90bae21807.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../scss/styles.css">
     <title>Scanner de Mercado - TheMarketsLab</title>
 
 </head>
@@ -24,36 +25,45 @@
 
     <header>
         <div class="container-fluid" id="container-nav">
-            <nav class="navbar navbar-expand-md">
 
-                <!-- Brand -->
-                <a class="navbar-brand" href="#">
-                    <img src="../pictures/logo-black.png" alt="logo cursos themarketslab" height="40">
-                </a>
+            <div class="row">
 
-                <!-- Toggler/collapsibe Button -->
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                    <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
-                </button>
+                <nav class="navbar navbar-expand-md">
+                    <div class="col-4">
+                        <!-- Brand -->
+                        <a class="navbar-brand" href="#">
+                            <img src="../pictures/logo-black.png" alt="logo themarketslab" height="40">
+                        </a>
+                    </div>
 
-                <!-- Navbar links -->
-                <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="../index.html">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="cursos.html">Cursos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contacto.html">Contacto</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" id="scanner-border" href="scanner.html">Scanner</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+                    <div class="col-8">
+                        <!-- Toggler/collapsibe Button -->
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#collapsibleNavbar">
+                            <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
+                        </button>
+
+
+                        <!-- Navbar links -->
+                        <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../index.html">Inicio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../pages/cursos.html">Cursos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                                </li>
+                                <li class="nav-item" id="scanner-nav">
+                                    <a class="nav-link" id="scanner-border" href="../pages/scanner.html">Scanner</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
         </div>
     </header>
 
@@ -317,7 +327,7 @@
         </div>
         
         <div class="row d-flex justify-content-center">
-            <div class="col-4 col-reseñas">
+            <div class="col-8 col-md-8 col-lg-4 col-reseñas">
                 <div>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
@@ -326,11 +336,11 @@
                     <i class="fa-solid fa-star"></i>
                 </div>
 
-                <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus esse aliquam quo magnam itaque vel, culpa iste omnis dolores maxime unde, nemo non veritatis!</q>
+                <q>Inicie el curso sabiendo casi nada acerca de Trading, hoy en día hago del trading mi trabajo principal aplicando las metodologías y las estrategias enseñadas en el curso. </q>
 
-                <p>Jose Rodriguez</p>
+                <p>Jose Carballo</p>
             </div>
-            <div class="col-4 col-reseñas">
+            <div class="col-8 col-md-8 col-lg-4 col-reseñas">
                 <div>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
@@ -343,7 +353,7 @@
 
                 <p>Alan Brito</p>
             </div>
-            <div class="col-5 col-reseñas">
+            <div class="col-8 col-md-8 col-lg-5 col-reseñas">
                 <div>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
