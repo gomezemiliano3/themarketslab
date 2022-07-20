@@ -512,15 +512,17 @@ footer p {
 
 #container-nav {
   height: auto;
+  width: 100%;
   z-index: 3;
   background-color: white;
 }
 
 #container-nav .row {
+  width: 100%;
   display: block;
 }
 
-#container-nav .row .col-4 {
+#container-nav .row .col-6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -529,38 +531,38 @@ footer p {
           justify-content: center;
 }
 
-#container-nav .row .col-4 img {
+#container-nav .row .col-6 img {
   width: auto;
 }
 
-#container-nav .row .col-8 .navbar-collapse ul li {
+#container-nav .row .col-6 .navbar-collapse ul li {
   margin: 10px;
 }
 
-#container-nav .row .col-8 .navbar-collapse ul li a {
+#container-nav .row .col-6 .navbar-collapse ul li a {
   font-weight: 500;
   color: black;
 }
 
-#container-nav .row .col-8 .navbar-collapse ul #scanner-nav {
+#container-nav .row .col-6 .navbar-collapse ul #scanner-nav {
   background-color: black;
   width: 15rem;
   margin-left: 4rem;
 }
 
-#container-nav .row .col-8 .navbar-collapse ul #scanner-nav a {
+#container-nav .row .col-6 .navbar-collapse ul #scanner-nav a {
   color: white;
   text-align: center;
   font-weight: 500;
 }
 
-#container-nav .row .col-8 .navbar-collapse ul #scanner-nav:hover {
+#container-nav .row .col-6 .navbar-collapse ul #scanner-nav:hover {
   background-color: #00ffb1;
   -webkit-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
 }
 
-#container-nav .row .col-8 .navbar-collapse ul #scanner-nav:hover a {
+#container-nav .row .col-6 .navbar-collapse ul #scanner-nav:hover a {
   color: #000;
 }
 
@@ -912,6 +914,35 @@ footer p {
           box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 70px;
 }
 
+.curso-personalizado {
+  height: 100vh;
+}
+
+.curso-personalizado h2 {
+  text-align: center;
+}
+
+.curso-personalizado p {
+  text-align: center;
+  font-size: 20px;
+}
+
+.curso-personalizado .container .selector label {
+  font-size: 20px;
+}
+
+.curso-personalizado .container .selector #primerModulo {
+  width: 70%;
+  height: auto;
+  border: 1px solid #DEDEDE;
+}
+
+.curso-personalizado .container #segundoModulo {
+  width: 70%;
+  height: auto;
+  border: 1px solid #DEDEDE;
+}
+
 .container-cuarta-parte-cursos {
   background: linear-gradient(-45deg, #22edbf, #85d285, #b4ef61, #124735);
   background-size: 400% 400%;
@@ -953,6 +984,7 @@ footer p {
   font-size: 20px;
   font-weight: 300;
   color: #fff;
+  margin: 5%;
 }
 
 .email-cursos p {

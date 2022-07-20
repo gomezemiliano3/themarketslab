@@ -278,6 +278,42 @@
 
 //
 
+// CURSO PERSONALIZADO
+
+.curso-personalizado {
+    height: 100vh;
+
+    h2 {
+        text-align: center;
+    }
+    p {
+        text-align: center;
+        font-size: 20px;
+    }
+    
+    .container {
+        .selector {
+            label {
+                font-size: 20px;
+            }
+
+            #primerModulo {
+                width: 70%;
+                height: auto;
+                border: 1px solid #DEDEDE;
+            }
+        }
+
+        #segundoModulo {
+            width: 70%;
+            height: auto;
+            border: 1px solid #DEDEDE;
+        }
+    }
+}
+
+//
+
 // // INICIA CUARTA PARTE CURSOS
 
 .container-cuarta-parte-cursos {
@@ -313,6 +349,7 @@
         font-size: 20px;
         font-weight: 300;
         color: $color3;
+        margin: 5%;
     }
 
     p {

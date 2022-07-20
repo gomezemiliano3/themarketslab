@@ -7,11 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- DESCRIPCION -->
-    <meta name="description" content="Aprende las estrategias utilizadas por los fondos de inversión más prestigiosos del mundo, adaptalas a tu operativa y comienza a hacer trading como un profesional.">
+    <meta name="description"
+        content="Aprende las estrategias utilizadas por los fondos de inversión más prestigiosos del mundo, adaptalas a tu operativa y comienza a hacer trading como un profesional.">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
         integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-        <link rel="icon" type="image/png" href="../pictures/iso-white.png">
+    <link rel="icon" type="image/png" href="../pictures/iso-white.png">
 
     <script src="https://kit.fontawesome.com/90bae21807.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/normalize.css">
@@ -293,6 +294,36 @@
 
     <!--  -->
 
+    <!-- CURSO PERSONALIZADO // js -->
+
+    <div class="container-fluid curso-personalizado">
+        <h2>Personaliza el curso según tus necesidades</h2>
+        <p>¿Hay temas que ya te sabes, o que no quieres aprender? ¡No te preocupes! En TheMarketsLab puedes preparar el
+            curso que más se adapte a tus necesidades.</p>
+
+        <div class="container">
+            <form class="selector">
+                <label for="primerModuloo">¿Qué prefieres dar en el primer modulo?</label>
+                <br>
+                <select name="primerModuloo" id="primerModulo" multiple="multiple">
+                    <option value="40">Fundamentos Chartistas</option>
+                    <option value="50">Análisis de datos</option>
+                </select>
+
+                <label for="segundoModuloo">¿Qué prefieres dar en el segundo modulo?</label>
+                <br>
+                <select name="segundoModuloo" id="segundoModulo" multiple="multiple">
+                    <option value="25">Bases de Mercado</option>
+                    <option value="30">Accion del Precio</option>
+                </select>
+                
+                <div id="btnCalc"> Selecciona valores en los select</div>
+            </form>
+        </div>
+    </div>
+
+    <!--  -->
+
     <!-- INICIA CUARTA PARTE CURSOS -->
 
     <div class="container container-cuarta-parte-cursos">
@@ -300,13 +331,16 @@
 
             <div class="d-flex flex-column justify-content-center align-items-center email-cursos">
                 <p id="upper-text">¿Interesado en construir tu futuro de Trader?</p>
-                <p>Recibe una notificación sobre <span class="d-flex justify-content-center">nuestros descuentos</span> </p>
+                <p>Recibe una notificación sobre <span class="d-flex justify-content-center">nuestros descuentos</span>
+                </p>
 
                 <form class="form-cursos">
                     <div class="form-group">
                         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
                             placeholder="Tu Correo Electrónico">
-                        <button type="button" class="btn btn-light btn-sendd"><p>Enviar</p></button>
+                        <button type="button" class="btn btn-light btn-sendd">
+                            <p>Enviar</p>
+                        </button>
                     </div>
                 </form>
             </div>
@@ -323,9 +357,10 @@
 
         <div class="container">
             <h5>Reseñas de Estudiantes</h5>
-            <p>+200 Alumnos confian en Nosotros y han comenzado su carrera de Trader <span class="d-flex justify-content-center"> con rentabilidad y éxito.</span></p>
+            <p>+200 Alumnos confian en Nosotros y han comenzado su carrera de Trader <span
+                    class="d-flex justify-content-center"> con rentabilidad y éxito.</span></p>
         </div>
-        
+
         <div class="row d-flex justify-content-center">
             <div class="col-8 col-md-8 col-lg-4 col-reseñas">
                 <div>
@@ -336,7 +371,8 @@
                     <i class="fa-solid fa-star"></i>
                 </div>
 
-                <q>Inicie el curso sabiendo casi nada acerca de Trading, hoy en día hago del trading mi trabajo principal aplicando las metodologías y las estrategias enseñadas en el curso. </q>
+                <q>Inicie el curso sabiendo casi nada acerca de Trading, hoy en día hago del trading mi trabajo
+                    principal aplicando las metodologías y las estrategias enseñadas en el curso. </q>
 
                 <p>Jose Carballo</p>
             </div>
@@ -349,7 +385,9 @@
                     <i class="fa-solid fa-star"></i>
                 </div>
 
-                <q>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit perferendis iure, dolorum, inventore perspiciatis reprehenderit sit officia quas consequatur accusamus beatae. Perferendis, ullam ut eos in atque harum consequuntur recusandae.</q>
+                <q>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit perferendis iure, dolorum,
+                    inventore perspiciatis reprehenderit sit officia quas consequatur accusamus beatae. Perferendis,
+                    ullam ut eos in atque harum consequuntur recusandae.</q>
 
                 <p>Alan Brito</p>
             </div>
@@ -362,7 +400,8 @@
                     <i class="fa-solid fa-star"></i>
                 </div>
 
-                <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim unde accusamus reprehenderit rerum commodi consequatur.</q>
+                <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim unde accusamus reprehenderit rerum
+                    commodi consequatur.</q>
 
                 <p>Vanesa Britos</p>
             </div>
@@ -492,6 +531,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
         integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous">
     </script>
+
+    <script src="../js/modulos.js"></script>
 
 </body>
 

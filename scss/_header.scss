@@ -7,13 +7,15 @@
 
 #container-nav {
     height:auto;
+    width: 100%;
     z-index: 3;
     background-color: white;
 
     .row {
+        width: 100%;
         display: block;
 
-        .col-4 {
+        .col-6 {
             display: flex;
             justify-content: center;
 
@@ -22,7 +24,7 @@
             }
         }
 
-        .col-8 {
+        .col-6 {
             .navbar-collapse {
                 ul {
                     li {
