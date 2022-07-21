@@ -294,30 +294,76 @@
 
     <!--  -->
 
-    <!-- CURSO PERSONALIZADO // js -->
+    <!-- CURSO PERSONALIZADO // JAVASCRIPT -->
 
     <div class="container-fluid curso-personalizado">
         <h2>Personaliza el curso según tus necesidades</h2>
         <p>¿Hay temas que ya te sabes, o que no quieres aprender? ¡No te preocupes! En TheMarketsLab puedes preparar el
             curso que más se adapte a tus necesidades.</p>
 
-        <div class="container">
-            <form class="selector">
-                <label for="primerModuloo">¿Qué prefieres dar en el primer modulo?</label>
+        <div class="container d-flex justify-content-center">
+            <form name="selector" id="selector" class="selector text-center">
+
+                <!-- PRIMER MODULO -->
+
+                <label for="primerModulo" id="primerModulo">¿Qué prefieres dar en el primer modulo?</label>
                 <br>
-                <select name="primerModuloo" id="primerModulo" multiple="multiple">
-                    <option value="40">Fundamentos Chartistas</option>
-                    <option value="50">Análisis de datos</option>
+                <select name="primerModulo" class="sel" id="sel1" multiple="multiple">
+                    <option value="40">Fundamentos de Mercado</option>
+                    <option value="50">Accion del Precio</option>
+                    <option value="15">Patrones de Velas</option>
+                    <option value="70">Principios de Volumen</option>
                 </select>
 
-                <label for="segundoModuloo">¿Qué prefieres dar en el segundo modulo?</label>
+                <!--  -->
+
+                <!-- SEGUNDO  MODULO -->
+
+                <label for="segundoModulo">¿Qué prefieres dar en el segundo modulo?</label>
                 <br>
-                <select name="segundoModuloo" id="segundoModulo" multiple="multiple">
-                    <option value="25">Bases de Mercado</option>
-                    <option value="30">Accion del Precio</option>
+                <select name="segundoModulo" class="sel" id="sel2" multiple="multiple">
+                    <option value="50">Accion del Precio</option>
+                    <option value="70">Principios de Volumen</option>
+                    <option value="150">Análisis de Volumen Avanzado</option>
+                    <option value="20">Análisis de Cluster</option>
                 </select>
+
+                <!--  -->
+
+                <!-- TERCER MODULO -->
+
+                <label for="tercerModulo">¿Qué prefieres dar en el segundo modulo?</label>
+                <br>
+                <select name="tercerModulo" class="sel" id="sel3" multiple="multiple">
+                    <option class="Tema1" value="150">Análisis de Volumen Avanzado</option>
+                    <option value="45">Análisis de Cluster</option>
+                    <option value="45">Herramientas Avanzadas de Volumen</option>
+                </select>
+
+                <!--  -->
+
+                <!-- CUARTO MODULO / TIEMPO DE CURSADA -->
+
+                <label for="cuartoModulo">Elige la carga horaria por semana</label>
+                <br>
+                <select name="cuartoModulo" class="sel" id="sel4">
+                    <option value="">2 horas semanales</option>
+                    <option value="">4 horas semanales</option>
+                    <option value="">6 horas semanales</option>
+                    <option value="">8 horas semanales</option>
+                </select>
+
+                <!-- BOTON PARA INDICARTE LAS OPCIONES ELEGIDAS -->
+
+                <input type="button"id="btn"value="Continuar con la compra"onclick="contar()">
+
+
+                <!-- TEXTO QUE SE VA A SUSTITUIR CON INNERTEXT PARA INDICAR EL VALOR TOTAL DEL CURSO -->
                 
-                <div id="btnCalc"> Selecciona valores en los select</div>
+                <div class="text-center" id="btnCalc">¡Selecciona los temas que quieras dar en tu curso!</div>
+
+                <!--  -->
+
             </form>
         </div>
     </div>

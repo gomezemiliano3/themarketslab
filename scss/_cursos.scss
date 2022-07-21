@@ -129,7 +129,7 @@
     height: 100vh;
     margin-top: 10rem;
     margin-bottom: 10rem;
-    
+
     .row {
         height: 100%;
         width: 100%;
@@ -286,28 +286,25 @@
     h2 {
         text-align: center;
     }
+
     p {
         text-align: center;
         font-size: 20px;
     }
-    
+
     .container {
         .selector {
+            margin-top:3%;
             label {
                 font-size: 20px;
             }
 
-            #primerModulo {
-                width: 70%;
+            .sel {
+                margin-bottom: 10%;
+                width: 100%;
                 height: auto;
                 border: 1px solid #DEDEDE;
             }
-        }
-
-        #segundoModulo {
-            width: 70%;
-            height: auto;
-            border: 1px solid #DEDEDE;
         }
     }
 }

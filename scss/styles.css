@@ -927,18 +927,17 @@ footer p {
   font-size: 20px;
 }
 
+.curso-personalizado .container .selector {
+  margin-top: 3%;
+}
+
 .curso-personalizado .container .selector label {
   font-size: 20px;
 }
 
-.curso-personalizado .container .selector #primerModulo {
-  width: 70%;
-  height: auto;
-  border: 1px solid #DEDEDE;
-}
-
-.curso-personalizado .container #segundoModulo {
-  width: 70%;
+.curso-personalizado .container .selector .sel {
+  margin-bottom: 10%;
+  width: 100%;
   height: auto;
   border: 1px solid #DEDEDE;
 }

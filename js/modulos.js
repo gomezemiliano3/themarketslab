@@ -1,23 +1,47 @@
-// Primer módulo Cursos Personalizados
+// MODULOS CURSOS PERSONALIZADOS //
+
+//  //
+
+// PARA CALCULAR EL VALOR DE LOS ELEMENTOS ELEGIDOS
 
 function calculoOpciones() {
 
-    let valorSelect1 = document.getElementById("primerModulo").value;
+    let valorSelect1 = parseInt(document.getElementById("sel1").value);
+    let valorSelect2 = parseInt(document.getElementById("sel2").value);
+    let valorSelect3 = parseInt(document.getElementById("sel3").value);
 
-    let valorSelect2 = document.getElementById("segundoModulo").value;
+    let calculoTotal = (valorSelect1 + valorSelect2 + valorSelect3);
 
     let botonCalculo = document.getElementById("btnCalc");
 
-    if (valorSelect1 == '' || valorSelect2 == '') {
-        botonCalculo.innerText = "Debes seleccionar una opcion!"
+    botonCalculo.innerText = "El valor total de tu curso personalizado es " + "$" + calculoTotal;
+};
 
-    } else {
-        // botonCalculo.innerText = "el valor es de" + valorSelect1 + valorSelect2;
+document.getElementById("sel1").addEventListener("change", calculoOpciones);
+document.getElementById("sel2").addEventListener("change", calculoOpciones);
+document.getElementById("sel3").addEventListener("change", calculoOpciones);
 
-        // console.log(`el valor es de ${valorSelect1} + ${valorSelect2}`);
+
+// //
+
+
+// * PARA QUE TE APAREZCA UN DOCUMENT.WRITE INDICANDOTE TUS ELECCIONES CUANDO LE DES AL BOTON DE CONTINUAR CON LA COMPRA * //
+
+// SIGUE EN PROCESO ESTA PARTE, POR AHORA SOLO TE INDICA SOBRE LA PRIMERA ELECCION :'( //
+
+function contar() {
+    n = 0;
+    // declarar la variable que guarde los elementos de la lista
+    let lista = document.getElementById("sel1");
+
+    for (i = 0; i < lista.options.length; i++) {
+        if (lista.options[i].selected) {
+
+            // calculo.innerText = lista;
+            alert(`Los datos introducidos de tu curso personalizado son los siguientes: ${ lista.options[i].innerHTML}`)
+            n++;
+        }
     }
-
-    document.getElementById("sel1").addEventListener("change", calculoOpciones);
-    document.getElementById("sel2").addEventListener("change", calculoOpciones);
-
 }
+
+// //
