@@ -915,7 +915,8 @@ footer p {
 }
 
 .curso-personalizado {
-  height: 100vh;
+  height: auto;
+  margin-bottom: 10rem;
 }
 
 .curso-personalizado h2 {
@@ -929,6 +930,7 @@ footer p {
 
 .curso-personalizado .container .selector {
   margin-top: 3%;
+  width: 60%;
 }
 
 .curso-personalizado .container .selector label {
@@ -939,7 +941,32 @@ footer p {
   margin-bottom: 10%;
   width: 100%;
   height: auto;
-  border: 1px solid #DEDEDE;
+  border: 1px solid #e3e3e3;
+}
+
+.curso-personalizado #texto-valor {
+  margin: 0;
+}
+
+.curso-personalizado #btnCalc {
+  font-size: 50px;
+  font-weight: 500;
+  color: #6E6E6E;
+}
+
+.curso-personalizado input {
+  background-color: #fff;
+  border: 1px solid #000;
+  width: 70%;
+  height: 4rem;
+  margin: 20px;
+}
+
+.curso-personalizado input:hover {
+  background-color: #000;
+  color: #fff;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .container-cuarta-parte-cursos {

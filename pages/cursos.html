@@ -298,7 +298,7 @@
 
     <div class="container-fluid curso-personalizado">
         <h2>Personaliza el curso según tus necesidades</h2>
-        <p>¿Hay temas que ya te sabes, o que no quieres aprender? ¡No te preocupes! En TheMarketsLab puedes preparar el
+        <p>¿Hay temas que ya te sabes, o que no quieres aprender? ¡No te preocupes! En TheMarketsLab puedes construir el
             curso que más se adapte a tus necesidades.</p>
 
         <div class="container d-flex justify-content-center">
@@ -308,7 +308,8 @@
 
                 <label for="primerModulo" id="primerModulo">¿Qué prefieres dar en el primer modulo?</label>
                 <br>
-                <select name="primerModulo" class="sel" id="sel1" multiple="multiple">
+                <select name="primerModulo" class="form-control form-control-lg sel" id="sel1">
+                    <option value="n/a" selected="true" disabled>Selecciona el primer módulo</option>
                     <option value="40">Fundamentos de Mercado</option>
                     <option value="50">Accion del Precio</option>
                     <option value="15">Patrones de Velas</option>
@@ -321,21 +322,23 @@
 
                 <label for="segundoModulo">¿Qué prefieres dar en el segundo modulo?</label>
                 <br>
-                <select name="segundoModulo" class="sel" id="sel2" multiple="multiple">
+                <select name="segundoModulo" class="form-control form-control-lg sel" id="sel2">
+                    <option value="n/a" selected="true" disabled>Selecciona el segundo módulo</option>
                     <option value="50">Accion del Precio</option>
                     <option value="70">Principios de Volumen</option>
                     <option value="150">Análisis de Volumen Avanzado</option>
-                    <option value="20">Análisis de Cluster</option>
+                    <option value="20">Análisis de Cluster</option> 
                 </select>
 
                 <!--  -->
 
                 <!-- TERCER MODULO -->
 
-                <label for="tercerModulo">¿Qué prefieres dar en el segundo modulo?</label>
+                <label for="tercerModulo">¿Qué prefieres dar en el tercer modulo?</label>
                 <br>
-                <select name="tercerModulo" class="sel" id="sel3" multiple="multiple">
-                    <option class="Tema1" value="150">Análisis de Volumen Avanzado</option>
+                <select name="tercerModulo" class="form-control form-control-lg sel" id="sel3">
+                    <option value="n/a" selected="true" disabled>Selecciona el tercer módulo</option>
+                    <option value="150">Análisis de Volumen Avanzado</option>
                     <option value="45">Análisis de Cluster</option>
                     <option value="45">Herramientas Avanzadas de Volumen</option>
                 </select>
@@ -346,24 +349,26 @@
 
                 <label for="cuartoModulo">Elige la carga horaria por semana</label>
                 <br>
-                <select name="cuartoModulo" class="sel" id="sel4">
+                <select name="cuartoModulo" class="form-control form-control-lg sel" id="sel4">
+                    <option value="n/a" selected="true" disabled>Selecciona la carga horaria</option>
                     <option value="">2 horas semanales</option>
                     <option value="">4 horas semanales</option>
                     <option value="">6 horas semanales</option>
                     <option value="">8 horas semanales</option>
                 </select>
-
-                <!-- BOTON PARA INDICARTE LAS OPCIONES ELEGIDAS -->
-
-                <input type="button"id="btn"value="Continuar con la compra"onclick="contar()">
-
-
+                
                 <!-- TEXTO QUE SE VA A SUSTITUIR CON INNERTEXT PARA INDICAR EL VALOR TOTAL DEL CURSO -->
                 
-                <div class="text-center" id="btnCalc">¡Selecciona los temas que quieras dar en tu curso!</div>
+                <p id="texto-valor">El valor total de tu curso personalizado es de</p>
 
+                <div class="text-center" id="btnCalc"></div>
+                
                 <!--  -->
 
+                
+                <!-- BOTON PARA INDICARTE LAS OPCIONES ELEGIDAS -->
+
+                <input type="button" id="btn" value="Continuar con la compra" onclick="contar()">
             </form>
         </div>
     </div>
