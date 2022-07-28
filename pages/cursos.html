@@ -306,9 +306,10 @@
 
                 <!-- PRIMER MODULO -->
 
-                <label for="primerModulo" id="primerModulo">¿Qué prefieres dar en el primer modulo?</label>
+                <label for="primerModulo">¿Qué prefieres dar en el primer modulo?</label>
                 <br>
-                <select name="primerModulo" class="form-control form-control-lg sel" id="sel1">
+
+                <select name="primerModulo" class="form-control form-control-lg sel sel1" id="selectModulo">
                     <option value="n/a" selected="true" disabled>Selecciona el primer módulo</option>
                     <option value="40">Fundamentos de Mercado</option>
                     <option value="50">Accion del Precio</option>
@@ -318,16 +319,18 @@
 
                 <!--  -->
 
+                <!--  -->
+
                 <!-- SEGUNDO  MODULO -->
 
                 <label for="segundoModulo">¿Qué prefieres dar en el segundo modulo?</label>
                 <br>
-                <select name="segundoModulo" class="form-control form-control-lg sel" id="sel2">
+                <select name="segundoModulo" class="form-control form-control-lg sel sel2" id="selectModulo">
                     <option value="n/a" selected="true" disabled>Selecciona el segundo módulo</option>
                     <option value="50">Accion del Precio</option>
                     <option value="70">Principios de Volumen</option>
                     <option value="150">Análisis de Volumen Avanzado</option>
-                    <option value="20">Análisis de Cluster</option> 
+                    <option value="20">Análisis de Cluster</option>
                 </select>
 
                 <!--  -->
@@ -336,8 +339,8 @@
 
                 <label for="tercerModulo">¿Qué prefieres dar en el tercer modulo?</label>
                 <br>
-                <select name="tercerModulo" class="form-control form-control-lg sel" id="sel3">
-                    <option value="n/a" selected="true" disabled>Selecciona el tercer módulo</option>
+                <select name="tercerModulo" class="form-control form-control-lg sel sel3" id="selectModulo">
+                    <option selected="true" disabled>Selecciona el tercer módulo</option>
                     <option value="150">Análisis de Volumen Avanzado</option>
                     <option value="45">Análisis de Cluster</option>
                     <option value="45">Herramientas Avanzadas de Volumen</option>
@@ -349,26 +352,30 @@
 
                 <label for="cuartoModulo">Elige la carga horaria por semana</label>
                 <br>
-                <select name="cuartoModulo" class="form-control form-control-lg sel" id="sel4">
+                <select name="cuartoModulo" class="form-control form-control-lg sel sel4">
                     <option value="n/a" selected="true" disabled>Selecciona la carga horaria</option>
-                    <option value="">2 horas semanales</option>
-                    <option value="">4 horas semanales</option>
-                    <option value="">6 horas semanales</option>
-                    <option value="">8 horas semanales</option>
+                    <option>2 horas semanales</option>
+                    <option>4 horas semanales</option>
+                    <option>6 horas semanales</option>
+                    <option>8 horas semanales</option>
                 </select>
-                
+
                 <!-- TEXTO QUE SE VA A SUSTITUIR CON INNERTEXT PARA INDICAR EL VALOR TOTAL DEL CURSO -->
-                
-                <p id="texto-valor">El valor total de tu curso personalizado es de</p>
+
+                <p id="texto-valor">Selecciona las opciones para calcular el valor de tu curso</p>
 
                 <div class="text-center" id="btnCalc"></div>
-                
+
                 <!--  -->
 
+                <input type="button" id="btn" value="Continuar con la compra">
                 
                 <!-- BOTON PARA INDICARTE LAS OPCIONES ELEGIDAS -->
+                <!-- <button id="btn">Ver mi curso personalizado</button> -->
 
-                <input type="button" id="btn" value="Continuar con la compra" onclick="contar()">
+                <h3 id="tituloCursoPersonalizado"></h3>
+                <p id="datosCurso"></p>
+
             </form>
         </div>
     </div>

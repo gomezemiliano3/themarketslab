@@ -283,29 +283,40 @@
 .curso-personalizado {
     height: auto;
     margin-bottom: 10rem;
+    padding: 5rem 0 10rem 0;
+    background-color: #000;
+    background-image: url(/pictures/curso-personalizado-gradient.png);
+    background-size: cover;
 
     h2 {
         text-align: center;
+        color: #fff;
     }
 
     p {
         text-align: center;
         font-size: 20px;
+        color: #fff;
+        font-weight: 200;
+        margin-bottom: 3rem;
     }
 
     .container {
         .selector {
             margin-top: 3%;
             width: 60%;
+            color: #fff;
 
-            label {
+            input {
                 font-size: 20px;
+                font-weight: 500;
             }
 
             .sel {
                 margin-bottom: 10%;
                 width: 100%;
                 height: auto;
+                background-color: transparent;
                 border: 1px solid #e3e3e3;
             }
         }
@@ -316,12 +327,12 @@
     }
 
     #btnCalc {
-        font-size: 50px;
+        font-size: 70px;
         font-weight: 500;
-        color: #6E6E6E;
+        color: #fff;
     }
 
-    input {
+    #btn {
         background-color: #fff;
         border: 1px solid #000;
         width: 70%;
@@ -329,9 +340,10 @@
         margin: 20px;
     }
 
-    input:hover {
-        background-color: #000;
+    #btn:hover {
+        background-color: transparent;
         color: #fff;
+        border: 1px solid #fff;
         transition: 0.4s;
     }
 }
