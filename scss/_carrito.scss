@@ -1,24 +1,498 @@
-.container-principal-carrito {
-    height: 100vh;
-    width: 100;
+body {
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
 
-    .container {
-        margin-top: 50px;
-        margin-bottom: 50px;
+.row {
+    margin: 0;
+    padding: 0;
+}
 
-        p {
-            font-size: 20px;
+.col-6,
+.col-12 {
+    padding: 0;
+    margin: 0;
+}
+
+// SLIDER
+
+
+
+// TERMINA SLIDER
+
+// .container-principal-carrito{
+//     height: auto;
+//     width: 100%;
+
+//     .container {
+//         margin-top: 50px;
+//         margin-bottom: 50px;
+
+//         p {
+//             font-size: 20px;
+//         }
+//     }
+
+// .info-curso {
+//     border-radius: 15px;
+//     box-shadow: rgba(0, 0, 0, 0.35) 0px 6px 16px;
+//     height: auto;
+//     padding: 2rem 0 3rem 0;
+
+//     #goBack {
+//         padding-top: 50px;
+//         width: 80%;
+//         height: auto;
+//         display: flex;
+//         align-items: center;
+//         justify-content: left;
+
+//         #backBtn {
+//             background-color: transparent;
+//             border: 0;
+//             font-size: 25px;
+//             font-weight: 300;
+//             text-align: left;
+//         }
+
+//         h3 {
+//             margin: 0;
+//             width: 100%;
+//             text-align: center;
+//         }
+//     }
+
+//     div {
+//         width: 80%;
+//         margin: 0 auto;
+//     }
+// }
+
+// .modulos {
+//     height: auto;
+//     padding-top: 50px;
+
+//     .row {
+
+//         // MODULO 1 //
+
+//         .moduloUno {
+//             height: 50px;
+//             border: 2px solid #000;
+//             border-radius: 5px;
+//             display: flex;
+//             justify-content: left;
+//             align-items: center;
+//             margin: 10px 0 10px 0;
+
+//             i {
+//                 font-size: 16px;
+//                 margin: 0 20px 0 20px;
+//                 width: 20px;
+//                 height: auto;
+//             }
+
+//             p {
+//                 margin: 0;
+//                 font-size: 20px;
+//             }
+
+//             #price {
+//                 margin-left: auto;
+//                 margin-right: 20px;
+//                 font-size: 22px;
+//                 font-weight: 500;
+//                 color: #000;
+//             }
+//         }
+
+
+//         .moduloUno:hover {
+//             background-color: #00ffb1;
+//             border: 0;
+//             transition: 0.4s;
+//             transition-timing-function: ease-in-out;
+//         }
+
+// DEMÁS MODULOS //
+
+//             .modulosGral {
+//                 height: 50px;
+//                 border: 1px solid #9d9d9d;
+//                 border-radius: 5px;
+//                 display: flex;
+//                 justify-content: left;
+//                 align-items: center;
+//                 margin: 10px 0 10px 0;
+
+//                 i {
+//                     font-size: 16px;
+//                     margin: 0 20px 0 20px;
+//                     width: 20px;
+//                     height: auto;
+//                 }
+
+//                 p {
+//                     margin: 0;
+//                     font-size: 20px;
+//                     font-weight: 300;
+//                 }
+
+//                 #price {
+//                     margin-left: auto;
+//                     margin-right: 20px;
+//                     font-size: 22px;
+//                     font-weight: 500;
+//                     color: #000;
+//                 }
+//             }
+
+//             .modulosGral:hover {
+//                 background-color: #00ffb1;
+//                 border: 0;
+//                 transition: 0.4s;
+//                 transition-timing-function: ease-in-out;
+//             }
+
+//             h5 {
+//                 margin-top: 40px;
+//             }
+
+//             i {
+//                 font-size: 20px;
+//                 margin-top: 45px;
+//                 margin-left: 10px;
+//             }
+//         }
+
+
+
+//         .datosUsuario {
+//             padding: 0;
+//             margin: 0 auto;
+
+//             #titulo {
+//                 margin-bottom: 8px;
+//                 text-align: left;
+//             }
+
+//             div {
+//                 display: flex;
+//                 padding: 0;
+//                 margin: 0;
+
+
+//                 input {
+//                     width: 100%;
+//                     height: 50px;
+//                     background-color: transparent;
+//                     margin: 0;
+//                     border: 1px solid #9d9d9d;
+//                     border-radius: 5px;
+//                     padding-left: 17px;
+//                 }
+
+//                 input:focus {
+//                     transition: 0.1s;
+//                     outline: solid #00ffb1;
+//                     border: 0;
+//                 }
+//             }
+
+//             #correo {
+//                 margin-top: 20px;
+//             }
+
+//             #correoIncorrecto {
+//                 margin: 0 auto;
+//                 font-size: 16px;
+//                 padding-top: 10px;
+//                 color: red;
+//             }
+//         }
+
+//         .datosCrediticios {
+
+//             .titulo2 {
+//                 margin-bottom: 8px;
+//                 text-align: left;
+//                 display: flex;
+//             }
+
+//             .colCredito {
+//                 .input-group {
+//                     padding: 0;
+//                     margin: 0;
+//                     width: 100%;
+
+//                     input {
+//                         width: 100%;
+//                         height: 50px;
+//                         background-color: transparent;
+//                         margin: 0;
+//                         border: 1px solid #9d9d9d;
+//                         border-radius: 5px;
+//                         margin: 0 0 20px 0;
+//                         padding-left: 17px;
+//                     }
+//                 }
+//             }
+//         }
+
+//         .buyButton input {
+//             width: 100%;
+//             height: 4rem;
+//             font-weight: 500;
+//             background-color: #000;
+//             color: #fff;
+//         }
+
+//         .buyButton input:hover {
+//             background-color: #fff;
+//             color: #000;
+//             transition: 0.4s;
+//         }
+
+//         #declaracion {
+//             font-size: 14px;
+//             color: #727272;
+//             margin: 0 auto;
+//             margin-top: 30px;
+//             font-weight: 300;
+//             width: 70%;
+//         }
+//     }
+// }
+
+// SLIDER
+.sliderCheckout {
+    padding: 0;
+    margin: 0 auto;
+
+    .splide {
+        border-radius: 15px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 6px 16px;
+        height: auto;
+        padding: 2rem 0 5rem 0;
+
+        // TEXTO PRINCIPAL Y BOTON BACK
+
+        #goBack {
+            padding-top: 50px;
+            width: 80%;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: left;
+
+            #backBtn {
+                background-color: transparent;
+                border: 0;
+                font-size: 25px;
+                font-weight: 300;
+                text-align: left;
+            }
+
+            h3 {
+                margin: 0;
+                width: 100%;
+                text-align: center;
+            }
         }
-    }
-
-    .info-curso {
 
         div {
-            width: 80%;
-            height: 300px;
-            border: 2px solid #000;
-            margin:0 auto;
-            border-radius: 10px;
+            margin: 0 auto;
         }
+
+        .row {
+            width: 80%;
+
+            // MODULO 1 //
+
+            .moduloUno {
+                height: 50px;
+                border: 2px solid #000;
+                border-radius: 5px;
+                display: flex;
+                justify-content: left;
+                align-items: center;
+                margin: 10px 0 10px 0;
+                width: 80%;
+
+                i {
+                    font-size: 16px;
+                    margin: 0 20px 0 20px;
+                    width: 20px;
+                    height: auto;
+                }
+
+                p {
+                    margin: 0;
+                    font-size: 20px;
+                }
+
+                #price {
+                    margin-left: auto;
+                    margin-right: 20px;
+                    font-size: 22px;
+                    font-weight: 500;
+                    color: #000;
+                }
+            }
+
+
+            .moduloUno:hover {
+                background-color: #00ffb1;
+                border: 0;
+                transition: 0.4s;
+                transition-timing-function: ease-in-out;
+            }
+
+            // DEMÁS MODULOS //
+
+            .modulosGral {
+                height: 50px;
+                border: 1px solid #9d9d9d;
+                border-radius: 5px;
+                display: flex;
+                justify-content: left;
+                align-items: center;
+                margin: 10px 0 10px 0;
+
+                i {
+                    font-size: 16px;
+                    margin: 0 20px 0 20px;
+                    width: 20px;
+                    height: auto;
+                }
+
+                p {
+                    margin: 0;
+                    font-size: 20px;
+                    font-weight: 300;
+                }
+
+                #price {
+                    margin-left: auto;
+                    margin-right: 20px;
+                    font-size: 22px;
+                    font-weight: 500;
+                    color: #000;
+                }
+            }           
+
+            .modulosGral:hover {
+                background-color: #00ffb1;
+                border: 0;
+                transition: 0.4s;
+                transition-timing-function: ease-in-out;
+            }
+
+
+            h5 {
+                margin-top: 40px;
+            }
+
+            i {
+                font-size: 20px;
+                margin-top: 45px;
+                margin-left: 10px;
+            }
+
+            .buyButton input {
+            width: 100%;
+            height: 4rem;
+            font-weight: 500;
+            background-color: #000;
+            color: #fff;
+            margin-top: 1rem;
+        }
+
+        .buyButton input:hover {
+            background-color: #fff;
+            color: #000;
+            transition: 0.4s;
+        }
+
+        #declaracion {
+            font-size: 14px;
+            color: #727272;
+            margin: 0 auto;
+            margin-top: 30px;
+            font-weight: 300;
+            width: 70%;
+        }
+        }
+
+        .my-slider-progress {
+            background-color: transparent;
+            margin-top: 3rem;
+            width: 80%;
+            
+            .my-slider-progress-bar {
+                margin: 0;
+                background: #00ffb1;
+                height: 6px;
+                transition: width 400ms ease;
+                width: 35%;
+                border-radius: 30px;
+
+                .dot {
+                    width: 15px;
+                    height: 15px;
+                    background-color: #00ffb1;
+                    border-radius: 100%;
+                    margin-left: 100%;
+                    position: relative;
+                    bottom: 5px;
+                    right: 5px;
+                }
+            }
+        }
+
+        .datosUsuario {
+                        padding: 0;
+                        margin: 0 auto;
+            
+                        #titulo {
+                            margin-bottom: 8px;
+                            text-align: left;
+                        }
+            
+                        div {
+                            display: flex;
+                            padding: 0;
+                            margin: 0;
+            
+            
+                            input {
+                                width: 100%;
+                                height: 50px;
+                                background-color: transparent;
+                                margin: 0;
+                                border: 1px solid #9d9d9d;
+                                border-radius: 5px;
+                                padding-left: 17px;
+                            }
+            
+                            input:focus {
+                                transition: 0.1s;
+                                outline: solid #00ffb1;
+                                border: 0;
+                            }
+                        }
+            
+                        #correo {
+                            margin-top: 20px;
+                        }
+            
+                        #correoIncorrecto {
+                            margin: 0 auto;
+                            font-size: 16px;
+                            padding-top: 10px;
+                            color: red;
+                        }
+                    }
     }
 }
