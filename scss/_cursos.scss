@@ -72,7 +72,6 @@
 // // INICIA SEGUNDA PARTE CURSOS
 
 .container-segunda-parte-cursos {
-    background-color: red;
     height: auto;
     margin: 50px 0 50px 0;
     background-image: url(../pictures/cursos2.png);
@@ -347,12 +346,12 @@
         transition: 0.4s;
     }
 
-    .btnContinuar {
-        display:none;
+    .continuarCompra {
+        display: none;
         margin: 0 auto !important;
     }
 
-    .btnContinuar:hover {
+    .continuarCompra:hover {
         text-decoration: none;
     }
 }

@@ -136,7 +136,6 @@ a {
 /* FOOTER INICIA */
 
 
-
 footer {
     background-color: $color1;
 
@@ -145,8 +144,6 @@ footer {
         font-size: 16px;
     }
 }
-
-
 
 
 /* FOOTER TERMINA */
@@ -534,3 +531,5 @@ footer {
 @import "../scss/queries";
 
 @import "../scss/carrito";
+
+@import "../scss/calc";

@@ -5,6 +5,9 @@
 
 // CALCULAR EL VALOR DE LOS CURSOS
 
+let calculoTotal = '';
+
+
 function calculoOpciones() {
 
     let valorSelect3 = parseInt(document.querySelector(".sel3").value);
@@ -13,6 +16,8 @@ function calculoOpciones() {
 
     let calculoTotal = (valorSelect1 + valorSelect2 + valorSelect3);
 
+    let precioCurso = localStorage.setItem('precioCurso', calculoTotal);
+    
     // TEXTO PARA INDICAR PRECIO
     let textoPrecio = document.querySelector("#texto-valor")
 
@@ -21,14 +26,15 @@ function calculoOpciones() {
 
     botonCalculo.innerText = "$" + calculoTotal + " " + "U$S";
 
+    let continuarCompra = document.querySelector('.continuarCompra')
+
 
     //* PARA QUE NO SE MUESTRE EL NaN MIENTRAS NO ESTEN TODOS LOS OPTIONS SELECCIONADOS *//
+    isNaN(calculoTotal) && (botonCalculo.innerText = '')
 
-    if (isNaN(calculoTotal)) {
-        botonCalculo.innerText = "";
-        textoPrecio.innerText = "";
-    }
+    isNaN(calculoTotal) ? continuarCompra.style.display = 'none' : continuarCompra.style.display = 'block'
 }
+
 
 document.querySelector(".sel1").addEventListener("change", calculoOpciones);
 document.querySelector(".sel2").addEventListener("change", calculoOpciones);
@@ -47,12 +53,11 @@ let moduloDos = document.querySelector(".sel2");
 let moduloTres = document.querySelector(".sel3");
 let cargaHoraria = document.querySelector(".sel4");
 
-
 // BUSCO LOS VALORES DEL MODULO 1
 moduloUno = () => {
-
     // PRECIO
     let value = document.querySelector(".sel1").value;
+
 
     // TEXTO
     let combo = document.querySelector(".sel1");
@@ -62,7 +67,6 @@ moduloUno = () => {
     let datosTotales1 = (`${selected} $${value}`)
     return datosTotales1;
 }
-
 
 // BUSCO LOS VALORES DEL MODULO 
 moduloDos = () => {
@@ -78,7 +82,6 @@ moduloDos = () => {
     let datosTotales2 = (`${selected} $${value}`)
     return datosTotales2;
 }
-
 
 // BUSCO LOS VALORES DEL MODULO 3
 moduloTres = () => {
@@ -105,10 +108,10 @@ cargaHoraria = () => {
 }
 
 // DEFINO LAS VARIABLES DE LOS ELEMENTOS QUE VOY A MOSTRAR
-let botonDatos = document.querySelector(".opcionesElegidas");
 let tituloDatos = document.querySelector("#tituloCursoPersonalizado");
-let datosCurso = document.querySelector("#datosCurso");
+// let datosCurso = document.querySelector("#datosCurso");
 
+let botonDatos = document.querySelector(".continuarCompra");
 // //
 
 // //
@@ -122,31 +125,14 @@ let modulo2 = '';
 let modulo3 = '';
 let modulo4 = '';
 
-let continuarCompra = document.querySelector(".continuarCompra");
-
 
 botonDatos.onclick = () => {
 
     // CAMBIANDO LOS VALORES DE LAS VARIABLES "MODULO" //
-    
     modulo1 = localStorage.setItem('M1', (moduloUno()));
     modulo2 = localStorage.setItem('M2', (moduloDos()));
     modulo3 = localStorage.setItem('M3', (moduloTres()));
     modulo4 = localStorage.setItem('CH', (cargaHoraria()));
     
-
-    // PARA QUE UNA VEZ EL USUARIO LE DE CLICK EN "CONTINUAR CON LA COMPRA" SE MUESTREN LOS VALORES ELEGIDOS
-    tituloDatos.innerText = "Los datos de tu curso son los siguientes:";
-    
-    datosCurso.innerText = `\n` + (moduloUno() + `\n` + `\n` + (moduloDos()) + `\n` + `\n` + (moduloTres()) + `\n` + `\n` + (cargaHoraria()));
-
-    if (botonDatos = 'click') {
-        document.querySelector(".opcionesElegidas").style.display = 'none'
-        document.querySelector(".continuarCompra").style.display = 'block';
-        }
+    // datosCurso.innerText = `\n` + (moduloUno() + `\n` + `\n` + (moduloDos()) + `\n` + `\n` + (moduloTres()) + `\n` + `\n` + (cargaHoraria()));
 }
-
-// COMPROBANDO LAS VARIABLES
-console.log(localStorage.getItem('M1'))
-console.log(localStorage.getItem('M2'))
-console.log(localStorage.getItem('M3'))
