@@ -289,3 +289,16 @@
 }
 
 // MEDIA QUERIES CURSOS TERMINA
+
+
+// MEDIA QUERIES CARRITO INICIA
+
+@media (max-width: 1300px) {
+    .sliderCheckout {
+        #goBack {
+            button {
+                height: 10rem;
+            }
+        }
+    }
+}
