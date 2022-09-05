@@ -20,7 +20,16 @@
     <!-- TOASTIFY -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
+
+    <!-- GOOGLE MAPS API  -->
+    <script async
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBbJ_MWNdI-x8h3Y9SzrAoK-clBJN7l938&libraries=places&callback=initMap">
+    </script>
+
+
+    <!-- SPLIDE API -->
     <script src="../splide-4.0.7/dist/js/splide.min.js"></script>
     <title>Finaliza tu compra - TheMarketsLab</title>
 
@@ -78,153 +87,8 @@
     <div class="container-fluid container-principal-carrito text-center">
         <div class="container">
             <h2>Continúa con el pago de tu curso personalizado</h2>
-
         </div>
 
-
-        <!-- <div class="container info-curso">
-            <div id="goBack">
-                <button id="backBtn" onclick="history.back()">
-                    <i class="fa-solid fa-arrow-left"></i>
-                </button>
-                <h3>Confirma los detalles de tu curso</h3>
-            </div> -->
-
-        <!-- <div class="container-fluid modulos"> -->
-
-        <!-- MODULOS CURSO -->
-
-        <!-- <div class="row datosUser">
-                    <div class="col-12 d-flex">
-                        <h5>Modulos Seleccionados</h5>
-                        <i class="fa-solid fa-book"></i>
-                    </div>
-
-                    <div class="col-12 moduloUno">
-                        <i class="fa-solid fa-1"></i>
-                        <p id="dato">Selecciona el primer modulo</p>
-                        <p id="price">U$S 50</p>
-                    </div>
-
-                    <div class="col-12 modulosGral moduloDos">
-                        <i class="fa-solid fa-2"></i>
-                        <p id="dato">Selecciona el segundo modulo</p>
-                        <p id="price">U$S 50</p>
-                    </div>
-
-                    <div class="col-12 modulosGral moduloTres">
-                        <i class="fa-solid fa-3"></i>
-                        <p id="dato">Selecciona el tercer modulo</p>
-                        <p id="price">U$S 50</p>
-                    </div>
-
-                    <div class="col-12 modulosGral moduloCuatro">
-                        <i class="fa-solid fa-4"></i>
-                        <p id="dato">Selecciona el cuarto modulo</p>
-                        <p id="price">U$S 50</p>
-                    </div>
-
-                    <h5>Carga Horaria Seleccionada</h5>
-                    <i class="fa-solid fa-calendar-days"></i>
-
-                    <div class="col-12 modulosGral cargaHoraria">
-                        <i class="fa-solid fa-clock-rotate-left"></i>
-                        <p id="dato">Selecciona la carga horaria</p>
-                        <p id="price">U$S 50</p>
-                    </div> -->
-        <!-- </div> -->
-
-        <!-- TERMINA MODULOS CURSO -->
-
-
-        <!--  -->
-
-
-        <!-- DATOS DE USUARIO -->
-
-        <!-- <div class="row datosUsuario"> -->
-
-        <!-- <div class="col-12" id="titulo">
-                        <h5>Ingresa tus datos</h5>
-                        <i class="fa-solid fa-fingerprint"></i>
-                    </div> -->
-
-        <!-- NOMBRE -->
-        <!-- <div class="col-6">
-                        <input class="user" type="text" id="nameCheckout" placeholder="Ingresa tu Nombre">
-                    </div> -->
-
-        <!-- APELLIDO -->
-        <!-- <div class="col-5 ml-auto">
-                        <input class="user" type="text" id="surnameCheckout" placeholder="Ingresa tu Apellido">
-                    </div> -->
-
-
-        <!-- CORREO -->
-        <!-- <div class="col-12" id="correo">
-                        <input class="user" type="email" id="emailCheckout" placeholder="Ingresa tu Correo Electrónico">
-                    </div>
-                    <p id="correoIncorrecto"></p> -->
-        <!-- </div> -->
-
-        <!-- TERMINA DATOS DE USUARIO -->
-
-
-        <!--  -->
-
-
-        <!-- DATOS CREDITICIOS -->
-
-        <!-- <div class="row datosCrediticios">
-
-                    <div class="col-12 titulo2">
-                        <h5>Ingresa los datos de tu tarjeta de Crédito / Débito</h5>
-                        <i class="fa-solid fa-id-card"></i>
-                    </div>
-
-                    <div class="col-12 nameCard colCredito">
-                        <div class="input-group"> <input type="text" name="Name"
-                                placeholder="Ingresa el nombre que figura en tu tarjeta"></div>
-                    </div>
-
-                    <div class="col-12 cardNumber colCredito">
-                        <div class="input-group"> <input type="text" id="cr_no" name="card-no"
-                                placeholder="0000 0000 0000 0000" minlength="19" maxlength="19">
-                        </div>
-                    </div>
-
-                    <div class="col-6 expiredDate colCredito m-0 p-0">
-                        <div class="input-group"> <input type="text" id="exp" name="expdate" placeholder="MM/YY"
-                                minlength="5" maxlength="5">
-                        </div>
-                    </div>
-
-                    <div class="col-5 ccvDate colCredito ml-auto m-0 p-0">
-                        <div class="input-group"> <input type="password" name="cvv" placeholder="&#9679;&#9679;&#9679;"
-                                minlength="3" maxlength="3"></div>
-                    </div>
-                </div> -->
-
-        <!-- TERMINA DATOS CREDITICIOS -->
-
-
-        <!--  -->
-
-
-        <!-- BOTONES -->
-
-        <!-- <div class="col-12 buyButton">
-                    <input type="button" value="FINALIZAR COMPRA" id="submitButton">
-                    <p></p>
-                </div>
-
-                <p id="declaracion">Tus <span> datos</span> estan protegidos. No compartimos información acerca de
-                    nuestros clientes sin previa autorización. Esto incluye intercambio de información entre compañías u
-                    organizaciones.
-                </p> -->
-        <!-- </div> -->
-        <!-- </div> -->
-        <!-- </div> -->
 
         <!-- SLIDER / SPLICE JS -->
 
@@ -267,7 +131,7 @@
                                 <div class="col-12 modulosGral moduloTres">
                                     <i class="fa-solid fa-3"></i>
                                     <p id="dato" class="m3Text">Selecciona el tercer modulo</p>
-                                    <p id="price" class="price3">U$S 50</p>
+                                    <p id="price" class="price3"></p>
                                 </div>
 
 
@@ -319,7 +183,7 @@
                                 <!-- APELLIDO -->
                                 <div class="col-5 datosPersonales ml-auto">
                                     <input class="user" type="text" id="surnameCheckout"
-                                        placeholder="Ingresa tu Apellido">
+                                        placeholder="Ingresa tu Apellido" pattern="[a-zA-Z'-'\s]*">
                                 </div>
 
 
@@ -341,16 +205,38 @@
 
                                 <!-- DIRECCION -->
                                 <div class="col-12 datosPersonales">
-                                    <input class="user" type="text" placeholder="Ingresa tu Dirección">
+                                    <input class="user form-control addressInput" type="text"
+                                        placeholder="Ingresa tu Dirección" id="search_input">
                                 </div>
 
+                                <script>
+                                    var searchInput = 'search_input';
+
+                                    $(document).ready(function () {
+                                        var autocomplete;
+                                        autocomplete = new google.maps.places.Autocomplete((document
+                                            .getElementById(searchInput)), {
+                                            types: ['geocode'],
+                                            /*componentRestrictions: {
+                                            country: "USA"
+                                            }*/
+                                        });
+
+                                        google.maps.event.addListener(autocomplete, 'place_changed',
+                                            function () {
+                                                var near_place = autocomplete.getPlace();
+                                            });
+                                    });
+                                </script>
+
                                 <div class="col-6 datosPersonales">
-                                    <input class="user" type="text" placeholder="Ingresa tu Ciudad">
+                                    <input class="user location" type="text"
+                                        placeholder="Ingresa tu Departamento / Ciudad">
                                 </div>
 
                                 <div class="col-5 datosPersonales ml-auto">
-                                    <input class="user codigoPostal" type="tel" placeholder="Ingresa tu Código Postal"
-                                        minlength="5" maxlength="5">
+                                    <input class="user codigoPostal" type="number"
+                                        placeholder="Ingresa tu Código Postal" minlength="5" maxlength="5">
                                 </div>
 
                                 <div class="col-12 buyButton">
@@ -359,7 +245,7 @@
                                         <button class="splide__arrow splide__arrow--prev d-none">
                                         </button>
 
-                                        <button class="splide__arrow splide__arrow--next" id="submitButton"
+                                        <button class="splide__arrow splide__arrow--next secondButton" id="submitButton"
                                             aria-label="Next slide" aria-controls="splide02-track">
                                             <p>CONTINUAR</p>
                                         </button>
@@ -389,26 +275,28 @@
 
                                 <div class="col-12 nameCard colCredito">
                                     <div class="input-group"> <input type="text" id="card-name" name="Name"
-                                            placeholder="Ingresa el nombre que figura en tu tarjeta"></div>
+                                            placeholder="Ingresa el nombre que figura en tu tarjeta" class="falseTrue">
+                                    </div>
                                 </div>
 
                                 <div class="col-12 cardNumber colCredito">
-                                    <div class="input-group"> <input type="text" class="cardNumberInput" id="cr_no"
-                                            name="card-no" placeholder="0000 0000 0000 0000" minlength="15"
+                                    <div class="input-group"> <input type="text" class="cardNumberInput falseTrue"
+                                            id="cr_no" name="card-no" placeholder="0000 0000 0000 0000" minlength="15"
                                             maxlength="16">
                                     </div>
                                 </div>
 
                                 <div class="col-6 expiredDate colCredito m-0 p-0">
-                                    <div class="input-group"> <input type="text" class="expiredNumber" id="exp"
-                                            name="expdate" placeholder="MM/YY" minlength="4" maxlength="4">
+                                    <div class="input-group"> <input type="text" class="expiredNumber falseTrue"
+                                            id="exp" name="expdate" placeholder="MM/YY" minlength="4" maxlength="4">
 
                                     </div>
                                 </div>
 
                                 <div class="col-5 ccvDate colCredito ml-auto m-0 p-0">
-                                    <div class="input-group"> <input type="password" name="cvv"
-                                            placeholder="&#9679;&#9679;&#9679;" minlength="3" maxlength="3"></div>
+                                    <div class="input-group"> <input type="password" name="cvv" id="ccvCard"
+                                            placeholder="&#9679;&#9679;&#9679;" minlength="3" maxlength="3"
+                                            pattern="[0-9]+" class="falseTrue"></div>
                                 </div>
 
                                 <div class="col-7 price2">
@@ -431,19 +319,34 @@
                                     <input type="button" value="FINALIZAR LA COMPRA">
                                     <p></p>
                                 </div>
+
+
+                                <!-- CHECKOUT ANIMATION -->
+                                <div class="container" id="processPay">
+                                    <div class="spinner">
+                                        <div class="double-bounce1"></div>
+                                        <div class="double-bounce2"></div>
+                                    </div>
+                                    <img id="successImg" src="../pictures/success.png" alt="">
+                                    <p id="procesandoPago"></p>
+                                    <a id="linkHome" href="../index.html">Volver al inicio</a>
+                                    
+
+                                </div>
                             </div>
 
                         </li>
                     </ul>
                 </div>
 
-                <!-- // Add the progress bar element -->
+                <!-- BARRA DE PROGRESO -->
                 <div class="my-slider-progress">
                     <div class="my-slider-progress-bar">
                         <div class="dot"></div>
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
 
@@ -561,7 +464,9 @@
     </footer>
     <!-- FOOTER TERMINA -->
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- SCRIPTS BOOTSTRAP -->
+
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
     </script>
@@ -571,6 +476,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
         integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous">
     </script>
+
 
     <!-- TOASTIFY -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>

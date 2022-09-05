@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "@splidejs/splide": "^4.0.7"
+    "@splidejs/splide": "^4.0.7",
+    "spinkit": "^2.0.1"
   }
 }
